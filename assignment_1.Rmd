@@ -2,6 +2,7 @@
 title: "Assignment 1"
 author: "Bindoff, A."
 output: html_document
+bibliography: ass_1.bib
 ---
 
 `r Sys.time()`
@@ -10,3 +11,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
+## Background
+
+```{r}
+sq <- as.vector(read.table("seq.txt")$V1)
+
+```
