@@ -13,7 +13,14 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 ## Background
 
-```{r}
+```{r, eval = FALSE}
 sq <- as.vector(read.table("seq.txt")$V1)
+#biocLite("annotate")
+library(annotate)
+bs <- blastSequences(sq, timeout = 480, as = "data.frame")
+save(bs, file = "bs")
+```
+```{r}
+load("bs")
 
 ```
