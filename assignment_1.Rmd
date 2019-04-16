@@ -1,0 +1,12 @@
+---
+title: "Assignment 1"
+author: "Bindoff, A."
+output: html_document
+---
+
+`r Sys.time()`
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
