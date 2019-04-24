@@ -9,18 +9,87 @@ bibliography: ass_1.bib
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(readr)
+set.seed(42)
+
 ```
 
-## Background
+# Background
+
+
+```{r, echo = FALSE}
+sq <- as.vector(read.table("seq.txt")$V1)
+```
+
+The BLASTn algorithm [@altschul1997gapped] was used to find high-scoring segment pairs (HSP) for the nucleotide query sequence `r sq` against the database maintained at [NCBI](https://blast.ncbi.nlm.nih.gov/). An API call was made initially using the R package `annotate` [@gentleman2018], however a query using the website interface proved to be much faster. Results were saved by copying and pasting the resulting table into Excel and saving as a .csv file.  
 
 ```{r, eval = FALSE}
-sq <- as.vector(read.table("seq.txt")$V1)
 #biocLite("annotate")
 library(annotate)
 bs <- blastSequences(sq, timeout = 480, as = "data.frame")
-save(bs, file = "bs")
 ```
+
+## BLAST Results
+
 ```{r}
-load("bs")
+bs <- read_csv("bs.csv")
+```
+
+A random selection of 12 of the `r nrow(bs)` rows are shown.  
+
+```{r}
+sample_n(bs, 12) %>% 
+  dplyr::select(Description, `E value`, `Per. Ident`, `Query Cover`) %>%
+  dplyr::arrange(`E value`) %>%
+  kable()
 
 ```
+
+### Query cover
+
+Query cover is the proportion of characters of the query sequence that are included in the [aligned] target sequence (x100).
+
+
+### Percent identity
+
+Percent identity describes the proportion of characters in the query sequence that match the target sequence (x100), such that identical sequences will have a percent identity of 100% and sequences with no matching characters will have a percent identity of 0%.  
+
+This number is not adjusted for the length of the query or target sequences, nor does it take into account the probability of matching by chance.  
+
+
+### *E*-value
+
+#### Pairwise *E*-value
+
+Consider the comparison of two sequences. Interest lies in determining whether there is evidence of shared ancestry (homology) between the sequences. A local alignment comprises an equal length segment from each sequence. Sufficient similarity between the aligned segments may be evidence of homology. However similarity can occur by chance so it is helpful to estimate the likelihood of observing the alignment by chance alone, using a model of random sequences [@altschul1990basic].  
+
+For sufficiently large random sequences of lengths $m$ and $n$, the expected number (*E*-value) of local alignments with score at least $S$ is given by  
+
+\[E \approx K mn e^{-\lambda S}\]
+
+where $K$ and $\lambda$ are natural scales for the search space size and the scoring system respectively [@altschul1990basic]. Thus, *E*-value gives a better measure of the **significance** of a match between query and target sequence than percent identity, as it makes a correction for the search space.  
+
+```{r}
+S <- seq(0, 10, by = 0.5)
+E <- 2^-S
+plot(E ~ S, xlab = "S'", type = "l", yaxt = "n", xaxt= "n")
+```
+
+The probability of finding exactly $z$ HPSs with score $\geq S$ is Poisson distributed  
+\[e^{-E} {E^z \over z!}\]  
+
+thus, the probability of finding at least one HSP with score $\geq S$ is  
+\[P = 1- e^{-E}\]
+
+For small $E$, *P*-values and *E*-values are approximately equivalent. *E*-values are reported in BLAST results because they are intuitively easier to grasp.  
+
+#### Database *E*-values
+
+NCBI BLAST treats the database of sequences as a single very long sequence of length $N$, and calculate *E*-values using this in the place of $n$ in the above equation. Thus, the *E*-values reported in the table above describe how many times you would expect a match by chance in a database containing all of the nucleotide sequences stored in the NCBI database.  
+
+# References
+
+
