@@ -13,6 +13,8 @@ library(dplyr)
 library(ggplot2)
 library(knitr)
 library(readr)
+library(seqinr)
+library(bio3d)
 set.seed(42)
 
 ```
@@ -36,15 +38,17 @@ bs <- blastSequences(sq, timeout = 480, as = "data.frame")
 
 ```{r}
 bs <- read_csv("bs.csv")
+
+dplyr::select(bs, Description, `E value`, `Per. Ident`, `Query Cover`) %>%
+  dplyr::arrange(`E value`) %>%
+  top_n(24) %>%
+  kable()
+
 ```
 
-A random selection of 12 of the `r nrow(bs)` rows are shown.  
-
 ```{r}
-sample_n(bs, 12) %>% 
-  dplyr::select(Description, `E value`, `Per. Ident`, `Query Cover`) %>%
-  dplyr::arrange(`E value`) %>%
-  kable()
+ggplot(bs, aes(x = `E value`, fill = factor(substr(Description, 1, 5)))) + 
+  geom_histogram()
 
 ```
 
@@ -78,10 +82,10 @@ E <- 2^-S
 plot(E ~ S, xlab = "S'", type = "l", yaxt = "n", xaxt= "n")
 ```
 
-The probability of finding exactly $z$ HPSs with score $\geq S$ is Poisson distributed  
+The probability of finding exactly $z$ HSPs with score $\geq S$ is Poisson distributed  
 \[e^{-E} {E^z \over z!}\]  
 
-thus, the probability of finding at least one HSP with score $\geq S$ is  
+because the probability of finding $z = 0$ HSPs with score $\geq S$ is $e^{-E}$, the probability of finding at least one HSP with score $\geq S$ is  
 \[P = 1- e^{-E}\]
 
 For small $E$, *P*-values and *E*-values are approximately equivalent. *E*-values are reported in BLAST results because they are intuitively easier to grasp.  
@@ -89,6 +93,16 @@ For small $E$, *P*-values and *E*-values are approximately equivalent. *E*-value
 #### Database *E*-values
 
 NCBI BLAST treats the database of sequences as a single very long sequence of length $N$, and calculate *E*-values using this in the place of $n$ in the above equation. Thus, the *E*-values reported in the table above describe how many times you would expect a match by chance in a database containing all of the nucleotide sequences stored in the NCBI database.  
+
+## Alignment
+
+16 sequences were chosen from different species and downloaded. They were then aligned using muscle [@muscle] in Seaview [@seaview].
+
+```{r}
+aligned <- bio3d::read.fasta("fasta_15.fst")
+print.fasta(aligned)
+
+```
 
 # References
 
