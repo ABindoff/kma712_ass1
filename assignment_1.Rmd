@@ -19,7 +19,13 @@ set.seed(42)
 
 ```
 
-# Background
+# {.tabset}
+
+# Summary
+
+
+
+## BLAST
 
 
 ```{r, echo = FALSE}
@@ -34,7 +40,7 @@ library(annotate)
 bs <- blastSequences(sq, timeout = 480, as = "data.frame")
 ```
 
-## BLAST Results
+### BLAST Results
 
 ```{r}
 bs <- read_csv("bs.csv")
@@ -120,6 +126,8 @@ PHYLIP v3.696 [@felsenstein2004phylip] was used to compute parsimony trees in Se
 
 ## Maximum Likelihood Tree
 
+ModelFinder [@kalyaanamoorthy2017modelfinder] was used to find the most likely tree from a maximum likelihood model fitted in IQ-Tree (v.1.6.10-Windows) [@nguyen2014iq]. Model robustness was estimated using a bootstrap procedure (UFBoot [@hoang2017ufboot2]).  
+
 ```{r, eval = FALSE}
 # I didn't have room for Linux VM on home computer where I was doing this
 cmd <- "iqtree-1.6.10-Windows\\bin\\iqtree -s fasta_15.nxs -bb 1000 -nt 2"
@@ -131,7 +139,7 @@ system(cmd)
 cat(read_file("fasta_15.nxs.log"))
 ```
 ```{r}
-cat(read_file("fasta_15.nxs.contree"))
+cat(read_file("fasta_15.nxs.iqtree"))
 
 ```
 
