@@ -1,9 +1,11 @@
 ---
-title: "Assignment 1"
+title: "KMA712 - Assignment 1"
 author: "Bindoff, A."
 output: html_document
 bibliography: ass_1.bib
 ---
+
+Student number 134323  
 
 `r Sys.time()`
 
@@ -19,14 +21,16 @@ set.seed(42)
 
 ```
 
-# {.tabset}
 
-# Summary
+# Background
 
+A query sequence was aligned with targets in the NCBI nucleotide database using BLAST. Neighbour joining, maximum parsimony, maximum likelihood and phylogenetic network methods were used to estimate phylogenetic relationships between 16 of the returned sequences.
 
+# Methods and Results {.tabset}
+
+This section is tabbed to aid navigation.  
 
 ## BLAST
-
 
 ```{r, echo = FALSE}
 sq <- as.vector(read.table("seq.txt")$V1)
@@ -42,12 +46,13 @@ bs <- blastSequences(sq, timeout = 480, as = "data.frame")
 
 ### BLAST Results
 
+A search of the NCBI nucleotide databases suggests that the query sequence is most likely from the genome of a fur seal (sp *Arctocephalus*), encoding for sex determining region Y protein.  
+
 ```{r}
 bs <- read_csv("bs.csv")
 
-dplyr::select(bs, Description, `E value`, `Per. Ident`, `Query Cover`) %>%
+dplyr::select(bs, Accession, Description, `E value`, `Per. Ident`, `Query Cover`) %>%
   dplyr::arrange(`E value`) %>%
-  top_n(24) %>%
   kable()
 
 ```
@@ -82,7 +87,7 @@ For sufficiently large random sequences of lengths $m$ and $n$, the expected num
 
 where $K$ and $\lambda$ are natural scales for the search space size and the scoring system respectively [@altschul1990basic]. Thus, *E*-value gives a better measure of the **significance** of a match between query and target sequence than percent identity, as it makes a correction for the search space.  
 
-```{r}
+```{r, echo = FALSE}
 S <- seq(0, 10, by = 0.5)
 E <- 2^-S
 plot(E ~ S, xlab = "S'", type = "l", yaxt = "n", xaxt= "n")
@@ -98,19 +103,17 @@ For small $E$, *P*-values and *E*-values are approximately equivalent. *E*-value
 
 #### Database *E*-values
 
-NCBI BLAST treats the database of sequences as a single very long sequence of length $N$, and calculate *E*-values using this in the place of $n$ in the above equation. Thus, the *E*-values reported in the table above describe how many times you would expect a match by chance in a database containing all of the nucleotide sequences stored in the NCBI database.  
+NCBI BLAST treats the database of sequences as a single very long sequence of length $N$, and calculate *E*-values using this in the place of $n$ in the above equation. **Thus, the *E*-values reported in the table above describe how many times you would expect a match by chance in a database containing all of the nucleotide sequences stored in the NCBI database.**  
 
 ## Alignment
 
-16 sequences were chosen from different species and downloaded. They were then aligned using muscle [@muscle] in Seaview [@gouy2009seaview].
+16 sequences were chosen from different species and downloaded. They were then aligned using clustal omega [@sievers2014clustal] and also with muscle [@edgar2004muscle] in Seaview [@gouy2009seaview]. Both alignments looked plausible, starting identically up to about 80 base-pairs.  
 
 ```{r}
 aligned <- bio3d::read.fasta("fasta_15.fst")
 print.fasta(aligned)
 
 ```
-
-Comment on difference between this alignment and BLAST alignment to query sequence  
 
 ## Neighbour Joining
 
@@ -126,7 +129,7 @@ PHYLIP v3.696 [@felsenstein2004phylip] was used to compute parsimony trees in Se
 
 ## Maximum Likelihood Tree
 
-ModelFinder [@kalyaanamoorthy2017modelfinder] was used to find the most likely tree from a maximum likelihood model fitted in IQ-Tree (v.1.6.10-Windows) [@nguyen2014iq]. Model robustness was estimated using a bootstrap procedure (UFBoot [@hoang2017ufboot2]).  
+ModelFinder [@kalyaanamoorthy2017modelfinder] was used to select the best fitting tree from maximum likelihood models fitted in IQ-Tree (v.1.6.10-Windows) [@nguyen2014iq]. Model robustness was estimated using a bootstrap procedure (UFBoot [@hoang2017ufboot2]).  
 
 ```{r, eval = FALSE}
 # I didn't have room for Linux VM on home computer where I was doing this
@@ -143,11 +146,30 @@ cat(read_file("fasta_15.nxs.iqtree"))
 
 ```
 
+IQ-Tree fits models using maximum likelihood (ML) then selects the 'best' model using Bayesian Information Criteria (BIC). Likelihood estimates the probability of the sequences given a model of their evolution on a tree, $P(Y|\theta)$, where$Y$ are the observed sequences and $\theta$ are phylogenetic trees. Unfortunately, ML can't tell us $P(\theta|Y)$, but we can at least estimate which model out of all the ML models fitted explains the observed data the best. Information criteria can be thought of as a distance to a (usually unknowable) 'true' model of the data/sequence-generating process, such that the model with the smallest BIC is the model that 'best' explains the observed data (according to BIC) and is, under the model assumptions (including the sampling model), closest to the 'true' model.  
+
+ML models are computationally expensive, so traditional bootstrap replication can take an unreasonable long time to compute. UFBoot speeds up this process by applying stopping rules and judicious selection of candidate trees. A drawback is that support for a clade requires a more stringent cut-off (95% or higher, rather than the traditional 80% often advocated for non-parametric bootstrap resampling).  
+
+The tree presented above has several clades with weak support, suggesting large gaps in the evolutionary model.  
+
 ## Phylogenetic Network
 
 HKY distances were used to estimate a phylogenetic network in SplitsTree4 [@huson2005application].  
 
 ![Phylogenetic network using HKY distances, with bootstrap estimates](hky_phylo_net.png)
+  
+  
+  
+  
+# Discussion
+
+There was broad agreement between the trees estimated using neighbour joining, maximum parsimony, and maximum likelihood methods. Bootstrap estimates provided support for the most closely related species, but provided much less support where more evolutionary distant species were placed in clades. For example, there was good support for {`AB539128.1`, `AB491590.1`} (100% of bootstrap replications) and {`AY424666.1`, `AM748311.1`, `AB292070.1`} (98-100% of boostrap replications), but much less support for placing these clades together on a branch (61-64% of bootstrap replications).  
+
+It was difficult to compare the phylogenetic network with the trees.
+
+# Data and source code
+
+Data including model summary output and code used to produce this document can be accessed at [github.com/ABindoff/kma712_ass1](https://github.com/ABindoff/kma712_ass1)
 
 # References
 

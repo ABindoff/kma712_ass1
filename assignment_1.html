@@ -12,7 +12,7 @@
 <meta name="author" content="Bindoff, A." />
 
 
-<title>Assignment 1</title>
+<title>KMA712 - Assignment 1</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -374,30 +374,39 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Assignment 1</h1>
+<h1 class="title toc-ignore">KMA712 - Assignment 1</h1>
 <h4 class="author">Bindoff, A.</h4>
 
 </div>
 
 
-<p>2019-04-26 10:45:20</p>
+<p>Student number 134323</p>
+<p>2019-04-26 17:36:12</p>
 <div id="background" class="section level1">
 <h1>Background</h1>
+<p>A query sequence was aligned with targets in the NCBI nucleotide database using BLAST. Neighbour joining, maximum parsimony, maximum likelihood and phylogenetic network methods were used to estimate phylogenetic relationships between 16 of the returned sequences.</p>
+</div>
+<div id="methods-and-results" class="section level1 tabset">
+<h1>Methods and Results</h1>
+<p>This section is tabbed to aid navigation.</p>
+<div id="blast" class="section level2">
+<h2>BLAST</h2>
 <p>The BLASTn algorithm <span class="citation">(Altschul et al. 1997)</span> was used to find high-scoring segment pairs (HSP) for the nucleotide query sequence AGGTGGCTCTAGAGAATCCCCAAATGCAAAACTCAGAGATCAGCAAGCAGCTGGGGTACCAGTGGAAAATGCTTACAGAAGCCGAAAAATGGCCATTCTTCGAGGAGGCACAGAGACTACAGGCCGTGCACCGAGAGAAATACCCAGACTATAAATATCGACCTCCCCCCCCGTCGGAAGGCCCTGCCACAGAAAAGTGATAAATTGCTACCTGCAGCCTCCTCCTCCCTGCTATGCAGGCAGGTGCTCGTGGATAAGTGGTATCCCCTTCACGTACAGGGACAGAAGCTCCCTCACAACCCGTGAACATAGCCAACTCGCTGCTTTGACGCAACAGGAGCACCACTACAGCTCTACAAGCCTCCGTGGCAGTCCGGAAACCTTGGCTACGCATCTGTCCGCTGACCCTCCCTTTTACCCTAAGTAACAGCTGGGACGACTTTCTGATGCTTATTTTCCATGGTGATTTCCTTACTCTTAA against the database maintained at <a href="https://blast.ncbi.nlm.nih.gov/">NCBI</a>. An API call was made initially using the R package <code>annotate</code> <span class="citation">(Gentleman 2018)</span>, however a query using the website interface proved to be much faster. Results were saved by copying and pasting the resulting table into Excel and saving as a .csv file.</p>
 <pre class="r"><code>#biocLite(&quot;annotate&quot;)
 library(annotate)
 bs &lt;- blastSequences(sq, timeout = 480, as = &quot;data.frame&quot;)</code></pre>
-<div id="blast-results" class="section level2">
-<h2>BLAST Results</h2>
+<div id="blast-results" class="section level3">
+<h3>BLAST Results</h3>
+<p>A search of the NCBI nucleotide databases suggests that the query sequence is most likely from the genome of a fur seal (sp <em>Arctocephalus</em>), encoding for sex determining region Y protein.</p>
 <pre class="r"><code>bs &lt;- read_csv(&quot;bs.csv&quot;)
 
-dplyr::select(bs, Description, `E value`, `Per. Ident`, `Query Cover`) %&gt;%
+dplyr::select(bs, Accession, Description, `E value`, `Per. Ident`, `Query Cover`) %&gt;%
   dplyr::arrange(`E value`) %&gt;%
-  top_n(24) %&gt;%
   kable()</code></pre>
 <table>
 <thead>
 <tr class="header">
+<th align="left">Accession</th>
 <th align="left">Description</th>
 <th align="right">E value</th>
 <th align="left">Per. Ident</th>
@@ -406,160 +415,711 @@ dplyr::select(bs, Description, `E value`, `Per. Ident`, `Query Cover`) %&gt;%
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left">AY429653.1</td>
 <td align="left">Arctocephalus australis sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">97.19%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="even">
+<td align="left">AY429652.1</td>
 <td align="left">Arctocephalus forsteri sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">97.19%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="odd">
+<td align="left">AY424651.1</td>
 <td align="left">Arctocephalus gazella sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">97.19%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="even">
+<td align="left">AY424649.1</td>
 <td align="left">Eumetopias jubatus sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">97.19%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="odd">
+<td align="left">AY424650.1</td>
 <td align="left">Zalophus californianus sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">96.84%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="even">
+<td align="left">XM_004417134.1</td>
+<td align="left">PREDICTED: Odobenus rosmarus divergens sex determining region Y (SRY), mRNA</td>
+<td align="right">0</td>
+<td align="left">96.49%</td>
+<td align="left">88%</td>
+</tr>
+<tr class="odd">
+<td align="left">AY424653.1</td>
 <td align="left">Odobenus rosmarus sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">96.49%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">AY424652.1</td>
 <td align="left">Callorhinus ursinus sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">96.14%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td align="left">AY424664.1</td>
 <td align="left">Phoca largha sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">94.79%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">AY424663.1</td>
 <td align="left">Phoca hispida sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">94.79%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td align="left">AY424662.1</td>
 <td align="left">Phoca vitulina sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">94.79%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">AY424660.1</td>
 <td align="left">Halichoerus grypus sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">94.79%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td align="left">AY424661.1</td>
 <td align="left">Phoca caspica sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">94.44%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">AY424659.1</td>
 <td align="left">Phoca groenlandica sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">94.44%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td align="left">AY424658.1</td>
 <td align="left">Cystophora cristata sex determining region Y protein (SRY) gene, complete cds</td>
 <td align="right">0</td>
 <td align="left">94.44%</td>
 <td align="left">99%</td>
 </tr>
+<tr class="even">
+<td align="left">KY608944.1</td>
+<td align="left">Leptonychotes weddellii isolate M03 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
 <tr class="odd">
+<td align="left">KY608943.1</td>
+<td align="left">Leptonychotes weddellii isolate K74 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608942.1</td>
+<td align="left">Leptonychotes weddellii isolate K73 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608941.1</td>
+<td align="left">Leptonychotes weddellii isolate K69 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608940.1</td>
+<td align="left">Leptonychotes weddellii isolate K67 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608939.1</td>
+<td align="left">Leptonychotes weddellii isolate K59 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608938.1</td>
+<td align="left">Leptonychotes weddellii isolate K51 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608937.1</td>
+<td align="left">Leptonychotes weddellii isolate K49 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608936.1</td>
+<td align="left">Leptonychotes weddellii isolate K48 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608934.1</td>
+<td align="left">Leptonychotes weddellii isolate K45 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608933.1</td>
+<td align="left">Leptonychotes weddellii isolate K43 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608932.1</td>
+<td align="left">Leptonychotes weddellii isolate K38 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608931.1</td>
+<td align="left">Leptonychotes weddellii isolate K34 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608930.1</td>
+<td align="left">Leptonychotes weddellii isolate K29 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608929.1</td>
+<td align="left">Leptonychotes weddellii isolate K28 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608928.1</td>
+<td align="left">Leptonychotes weddellii isolate K27 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608927.1</td>
+<td align="left">Leptonychotes weddellii isolate K23 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608926.1</td>
+<td align="left">Leptonychotes weddellii isolate K22 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608925.1</td>
+<td align="left">Leptonychotes weddellii isolate K21 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608924.1</td>
+<td align="left">Leptonychotes weddellii isolate K12 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608923.1</td>
+<td align="left">Leptonychotes weddellii isolate K10 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608922.1</td>
+<td align="left">Leptonychotes weddellii isolate K09 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608921.1</td>
+<td align="left">Leptonychotes weddellii isolate K05 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608920.1</td>
+<td align="left">Leptonychotes weddellii isolate K03 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608919.1</td>
+<td align="left">Leptonychotes weddellii isolate K02 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608918.1</td>
+<td align="left">Leptonychotes weddellii isolate G24 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608917.1</td>
+<td align="left">Leptonychotes weddellii isolate G23 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608916.1</td>
+<td align="left">Leptonychotes weddellii isolate G15 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608915.1</td>
+<td align="left">Leptonychotes weddellii isolate G13 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608914.1</td>
+<td align="left">Leptonychotes weddellii isolate G07 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608912.1</td>
+<td align="left">Leptonychotes weddellii isolate G04 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">AY424657.1</td>
+<td align="left">Mirounga leonina sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">94.43%</td>
+<td align="left">98%</td>
+</tr>
+<tr class="even">
+<td align="left">KY608935.1</td>
+<td align="left">Leptonychotes weddellii isolate K47 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.08%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="odd">
+<td align="left">KY608913.1</td>
+<td align="left">Leptonychotes weddellii isolate G06 sex-determining region Y protein (SRY) gene, partial cds</td>
+<td align="right">0</td>
+<td align="left">94.08%</td>
+<td align="left">79%</td>
+</tr>
+<tr class="even">
+<td align="left">XM_021693078.1</td>
+<td align="left">PREDICTED: Neomonachus schauinslandi sex determining region Y (SRY), mRNA</td>
+<td align="right">0</td>
+<td align="left">94.08%</td>
+<td align="left">88%</td>
+</tr>
+<tr class="odd">
+<td align="left">AY424656.1</td>
+<td align="left">Mirounga angustirostris sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">94.08%</td>
+<td align="left">98%</td>
+</tr>
+<tr class="even">
+<td align="left">AY424655.1</td>
+<td align="left">Hydrurga leptonyx sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">94.08%</td>
+<td align="left">98%</td>
+</tr>
+<tr class="odd">
+<td align="left">AY424654.1</td>
+<td align="left">Monachus schauinslandi sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">94.08%</td>
+<td align="left">98%</td>
+</tr>
+<tr class="even">
+<td align="left">AY424665.1</td>
+<td align="left">Erignathus barbatus sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">93.73%</td>
+<td align="left">98%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB491584.1</td>
+<td align="left">Mustela sibirica SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">91.90%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AY424668.1</td>
+<td align="left">Enhydra lutris sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">91.90%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB292070.1</td>
+<td align="left">Ailuropoda melanoleuca SRY gene for sex determinig region Y, complete cds</td>
+<td align="right">0</td>
+<td align="left">91.32%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="even">
+<td align="left">AM748312.1</td>
+<td align="left">Ailuropoda melanoleuca sry gene for sex determining Y protein, exon 1</td>
+<td align="right">0</td>
+<td align="left">91.32%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB491583.1</td>
+<td align="left">Mustela itatsi SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">91.55%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AB491585.1</td>
+<td align="left">Mustela nivalis SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">91.20%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">LC333404.1</td>
+<td align="left">Meles leucurus SRY gene for sex determining region Y protein, complete cds, haplotype: Me5</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">LC185458.1</td>
+<td align="left">Meles leucurus SRY gene for sex determining region Y protein, complete cds, haplotype: Me4</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">LC185457.1</td>
+<td align="left">Meles leucurus SRY gene for sex determining region Y protein, complete cds, haplotype: Me3</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">LC174977.1</td>
+<td align="left">Vormela peregusna SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB539136.1</td>
+<td align="left">Meles meles SRY gene for sex determining region Y protein, complete cds, haplotype: Mw1</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AB539135.1</td>
+<td align="left">Meles meles SRY gene for sex determining region Y protein, complete cds, haplotype: Mc1</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB539134.1</td>
+<td align="left">Meles leucurus SRY gene for sex determining region Y protein, complete cds, haplotype: Me2</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AB539133.1</td>
+<td align="left">Meles leucurus SRY gene for sex determining region Y protein, complete cds, haplotype: Me1</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB491588.1</td>
+<td align="left">Lutra lutra SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">91.37%</td>
+<td align="left">57%</td>
+</tr>
+<tr class="even">
+<td align="left">AB491587.1</td>
+<td align="left">Neovison vison SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB491586.1</td>
+<td align="left">Mustela erminea SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">90.85%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AY424667.1</td>
+<td align="left">Lutra lutra sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">91.37%</td>
+<td align="left">57%</td>
+</tr>
+<tr class="odd">
+<td align="left">KP081776.1</td>
+<td align="left">Canis lupus familiaris chromosome Y genomic sequence</td>
+<td align="right">0</td>
+<td align="left">90.24%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="even">
+<td align="left">AF107021.1</td>
+<td align="left">Canis familiaris sex determining region Y protein (Sry) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">90.24%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="odd">
+<td align="left">XM_026490956.1</td>
+<td align="left">PREDICTED: Ursus arctos horribilis sex determining region Y (SRY), mRNA</td>
+<td align="right">0</td>
+<td align="left">89.93%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="even">
+<td align="left">XM_025989298.1</td>
+<td align="left">PREDICTED: Vulpes vulpes sex determining region Y (SRY), mRNA</td>
+<td align="right">0</td>
+<td align="left">89.90%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="odd">
+<td align="left">XM_008709959.1</td>
+<td align="left">PREDICTED: Ursus maritimus sex determining region Y (SRY), mRNA</td>
+<td align="right">0</td>
+<td align="left">89.93%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="even">
+<td align="left">AB292066.1</td>
 <td align="left">Ursus thibetanus SRY gene for sex determinig region Y, complete cds</td>
 <td align="right">0</td>
 <td align="left">89.93%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td align="left">AB292065.1</td>
 <td align="left">Ursus americanus SRY gene for sex determinig region Y, complete cds</td>
 <td align="right">0</td>
 <td align="left">89.93%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">AB292064.1</td>
 <td align="left">Ursus maritimus SRY gene for sex determinig region Y, complete cds</td>
 <td align="right">0</td>
 <td align="left">89.93%</td>
 <td align="left">99%</td>
 </tr>
+<tr class="odd">
+<td align="left">AB292063.1</td>
+<td align="left">Ursus arctos SRY gene for sex determinig region Y, complete cds</td>
+<td align="right">0</td>
+<td align="left">89.93%</td>
+<td align="left">59%</td>
+</tr>
 <tr class="even">
+<td align="left">EU371736.1</td>
+<td align="left">Vulpes vulpes SRY protein gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">89.90%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="odd">
+<td align="left">AM748310.1</td>
 <td align="left">Ursus thibetanus sry gene for sex determining Y protein, exon 1</td>
 <td align="right">0</td>
 <td align="left">89.93%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">AM748307.1</td>
 <td align="left">Ursus americanus sry gene for sex determining Y protein, exon 1</td>
 <td align="right">0</td>
 <td align="left">89.93%</td>
 <td align="left">99%</td>
 </tr>
+<tr class="odd">
+<td align="left">AM748306.1</td>
+<td align="left">Ursus arctos sry gene for sex determining Y protein, exon 1</td>
+<td align="right">0</td>
+<td align="left">89.93%</td>
+<td align="left">59%</td>
+</tr>
 <tr class="even">
+<td align="left">AM748305.1</td>
 <td align="left">Ursus maritimus sry gene for sex determining Y protein, exon 1</td>
 <td align="right">0</td>
 <td align="left">89.93%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="odd">
+<td align="left">AB491590.1</td>
+<td align="left">Martes zibellina SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">90.14%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AB491589.1</td>
+<td align="left">Martes melampus SRY gene for sex determining region Y protein, complete cds</td>
+<td align="right">0</td>
+<td align="left">90.14%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB292069.1</td>
 <td align="left">Tremarctos ornatus SRY gene for sex determinig region Y, complete cds</td>
 <td align="right">0</td>
 <td align="left">89.58%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="even">
+<td align="left">AB292068.1</td>
 <td align="left">Melursus ursinus SRY gene for sex determinig region Y, complete cds</td>
 <td align="right">0</td>
 <td align="left">89.58%</td>
 <td align="left">99%</td>
 </tr>
 <tr class="odd">
+<td align="left">EU371738.1</td>
+<td align="left">Nyctereutes procyonoides procyonoides SRY protein gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">89.58%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="even">
+<td align="left">AM748311.1</td>
 <td align="left">Tremarctos ornatus sry gene for sex determining Y protein, exon 1</td>
 <td align="right">0</td>
 <td align="left">89.58%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
+<td align="left">AM748309.1</td>
 <td align="left">Melursus ursinus sry gene for sex determining Y protein, exon 1</td>
 <td align="right">0</td>
 <td align="left">89.58%</td>
 <td align="left">99%</td>
 </tr>
-<tr class="odd">
+<tr class="even">
+<td align="left">AM748308.1</td>
 <td align="left">Helarctos malayanus sry gene for sex determining Y protein, exon 1</td>
 <td align="right">0</td>
 <td align="left">89.58%</td>
 <td align="left">99%</td>
+</tr>
+<tr class="odd">
+<td align="left">AY424666.1</td>
+<td align="left">Ursus arctos sex determining region Y protein (SRY) gene, complete cds</td>
+<td align="right">0</td>
+<td align="left">89.58%</td>
+<td align="left">59%</td>
+</tr>
+<tr class="even">
+<td align="left">AB539132.1</td>
+<td align="left">Meles anakuma SRY gene for sex determining region Y protein, complete cds, haplotype: Mj6</td>
+<td align="right">0</td>
+<td align="left">89.79%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB539131.1</td>
+<td align="left">Meles anakuma SRY gene for sex determining region Y protein, complete cds, haplotype: Mj5</td>
+<td align="right">0</td>
+<td align="left">89.79%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AB539130.1</td>
+<td align="left">Meles anakuma SRY gene for sex determining region Y protein, complete cds, haplotype: Mj4</td>
+<td align="right">0</td>
+<td align="left">89.79%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="odd">
+<td align="left">AB539129.1</td>
+<td align="left">Meles anakuma SRY gene for sex determining region Y protein, complete cds, haplotype: Mj3</td>
+<td align="right">0</td>
+<td align="left">89.79%</td>
+<td align="left">58%</td>
+</tr>
+<tr class="even">
+<td align="left">AB539128.1</td>
+<td align="left">Meles anakuma SRY gene for sex determining region Y protein, complete cds, haplotype: Mj2</td>
+<td align="right">0</td>
+<td align="left">89.79%</td>
+<td align="left">58%</td>
 </tr>
 </tbody>
 </table>
 <pre class="r"><code>ggplot(bs, aes(x = `E value`, fill = factor(substr(Description, 1, 5)))) + 
   geom_histogram()</code></pre>
 <p><img src="data:image/png;base64,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CTQMabd5SHMZLBSoXN987wJEQEig4em/bk10af2z9lCgEWjetijQ2AOYj4CQQAMFagwKVK5vvncBIiAk0ECBGoMCleub712ACAgJNFCgxqBA5frmexcgAkICDRSoMShQub753gWIgJBAAwVqDApUrm++dwEiICTQQIEagwKV65vvXYAICAk0UKDGoEDl+uZ7FyACQgINFKgxKFC5vvneBYiAkEADBWoMClSub753ASIgJNBAgRqDApXrm+9dgAgICTRQoMagQOX65nsXIAJCAg0UqDEoULm++d4FiICQQAMFagwKVK5vvncBIiAk0NBLoCfjpOQgfGuS7J4x6izZqXm1j0BP98sBT/cvPRRHnn9w/Yx5GYACleub712ACAgJNAAJdHS3eHiGQOtHNgQFKtc337sAERASaOgp0O1joe4FCLSoSYF2pHnbokBjD2A+AkICDTgCHb3kV8EUaEeaty0KNPYA5iMgJNCwSYFOkoOjl5Lk2oP88e7JjfTxceYs96lp7q6jcTK6GUOgl345duLMBRoO+jidytbNxWJ+mB1tyF55fnucJFcf6H5ZQ4ACleub712ACAgJNGxWoFfyw6GZxybJy/kB0vQDfkWYyusgez3jzRgCfehk6cYLBp26w7S7S4H6o7ejg7VJDB0KVK5vvncBIiAk0LBZgSY7x9kS04ly+0H5OPOUXxiObi7mkySKQJ0tvTsrg6a2fCWdVy52t/Y93U+uHy/m95MzdvYHCgUq1zffuwAREBJo2NRZ+MykE7fbnB/+rD520sr/3x0aTU0XQ6DpfDIhOoFWBvUr01yp7mX/SvrnWUdqB0kXgX757l7Ot3+TPfvqp7f29r7/0frHmrctCjT2AOYjICTQsFmB5lqaOlMuHy+XhKf77lqjaRyBulHdw+WgfmHqyAU6P/SXPJ1xFmyodBHo57cqAvU2dTINaN62KNDYA5iPgJBAw2Z34fP13HS51PSmdO5cHpmMchbeWTM1ox+kMmhxheiiFGgpfnP78F0E+mzvu8snj/Ze+2jxxft7r322+rHmbYsCjT2A+QgICTSci0Aza83cuZu4As1PvpcP/aDBZU3+la+XQB/t/aB8/Pktvw599WerH2vetijQ2AOYj4CQQMO5CPR0f/s4PwIZewWaj+sfVgZdXYEGrxijg0C/er8iyyd+NfqkIlVP87ZFgcYewHwE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phQoBdpihOgDmI+AkEDDRgWa7qzvZJqaH17ACrRekBN/aIFn4Ztp3rYo0NgDmI+AkEDDRgVaqPJ0/wKOgdYLMp3Kzlnv+8lSoAsKtMUI0QcwHwEhgYYoAp0lxZ579Sy8/0MmhkCLnXhZoPfys0oUKAXaYoToA5iPgJBAQ4Rd+Pn9JBSouw708fg8LmNam1k6JyfI2vfnn7zuzjNRoBRoixGiD2A+AkICDZu+kN5dKHQ/XWyu34nUsACNI9BM37vhtzHlF9ovv43pwH2KAm3etijQ2AOYj4CQQMOGL2PyN71nJ7Yv6l741Zm580iSQK+8fex/ngJt3rYo0NgDmI+AkEADv5HeGBSoXN987wJEQEiggQI1BgUq1zffuwAREBJooECNQYHK9c33LkAEhAQaKFBjUKByffO9CxABIYEGCtQYFKhc33zvAkRASKCBAjUGBSrXN9+7ABEQEmigQI1Bgcr1zfcuQASEBBooUGNQoHJ9870LEAEhgQYK1BgUqFzffO8CREBIoIECNQYFKtc337sAERASaKBAjUGByvXN9y5ABIQEGp4qiNO2w5zLYKFA5frmexcgAkICAgwFKtc337sAERASEGAoULm++d4FiICQQMOQdpuHNJfBQoHK9c33LkAEhAQanv7D1kSX1n9qDwUageZtiwKNPYD5CAgJNFCgxqBA5frmexcgAkICDRSoMShQub753gWIgJBAAwVqDApUrm++dwEiICTQQIEagwKV65vvXYAICAk0UKDGoEDl+uZ7FyACQgINFKgxKFC5vvneBYiAkEADBWoMClSub753ASIgJNBAgRqDApXrm+9dgAgICTRQoMagQOX65nsXIAJCAg0UqDEoULm++d4FiICQQAMFagwKVK5vvncBIiAk0ECBGoMCleub712ACAgJNFCgxqBA5frmexcgAkICDb0Eerp/6eH6Q/GVJnoIdJpUMYvNOwAAIABJREFU2NUNawsKVK5vvncBIiAk0ECBGoMCleub712ACAgJNIAItOOIBqFA5frmexcgAkICDRSoMShQub753gWIgJBAw6YF+vz2OEmuPli+8vj1dKd66+3j9OEs2T0aJ5fvSnPZnECXIy3ns5gkByc3ktH3FouPx8nWnfyDldkZgQKV65vvXYAICAk0bFigJ+P8KOTooHjlnj8uubPItPZy+va2aKtNCtSPVJlP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OmcbUKByffO9CxABIYGGDQr0ZJypMhll+9KT5K2xE2cp0Fnl7Xr6CDQd5qA6p+pos+Tl9Nn2cTGp3Un+1t2VOduAApXrm+9dgAgICTRsTqCn+8n1dMF5P18KporafrBI130HxS58qqprny7m9xL5CGUfgS6mfh++ZrRZ4vbq00ldP04nmIxuLp7n5+2DOduAApXrm+9dgAgICTRsTqCFwabZLvTEKWmamcsprXh7Ih8R7SXQk7Ez8yRfiQajzZLircyjqVuzffz8UGkwZxtQoHJ9870LEAEhgYaNCXR+6JeWJ+PUTP5AZP6BXKDlLvYZ53h6CTQdYLecUjhaMeTEfyKfaPZiOGcbUKByffO9CxABIYGGDQo0KUhfdOtAZ9WZ21n2rjrjzH0vgXpNuuVuONoZAq3O2QYUqFzffO8CREBIoGFjAj3dbxCo/2g0gToxTnI7hqPNyv35g0Ug0HDONqBA5frmexcgAkICDRsUaPXs0AWsQPMF5ul+vthcXYGKArV3zT0FKtc337sAERASaNjkLnzlWiB/DPRkfG7HQN2BzJkbd/UYqCDQcM42oEDl+uZ7FyACQgINmzwL78yYO8ud8HZnuc/nLLxb7k78knLlLLwg0HDONqBA5frmexcgAkICDRu9DnT7wcJf+zlJkp3j8jpQf/XQtU8XL27Hug50kVnzW/vezsFoskCDOduAApXrm+9dgAgICTT0FGh5EuagvPknyb68bpK8mT/OdqhP8tuAIt+JtPADFdXDO5EkgQZztgEFKtc337sAERASaNigQP195fk95qmr0mXd1s38Yx+Pc1lFvRd+4UZdroiDe+FFgVbnbAMKVK5vvncBIiAk0BDpG+knXfaJewv06wAFKtc337sAERASaKBAjUGByvXN9y5ABIQEGihQY1Cgcn3zvQsQASGBBgrUGBSoXN987wJEQEiggQI1BgUq1zffuwAREBJo4D9rbAwKVK5vvncBIiAk0ECBGoMCleub712ACAgJNFCgxqBA5frmexcgAkICDRSoMShQub753gWIgJBAAwVqDApUrm++dwEiICTQQIEagwKV65vvXYAICAk0PFUQp22HOZfBQoHK9c33LkAEhAQEGApUrm++dwEiICQgwFCgcn3zvQsQASGBhiHtNg9pLoOFApXrm+9dgAgICTQ8/XutiS6t/94eCjQCzdsWBRp7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" width="672" /></p>
+</div>
 <div id="query-cover" class="section level3">
 <h3>Query cover</h3>
 <p>Query cover is the proportion of characters of the query sequence that are included in the [aligned] target sequence (x100).</p>
@@ -577,9 +1137,6 @@ dplyr::select(bs, Description, `E value`, `Per. Ident`, `Query Cover`) %&gt;%
 <p>For sufficiently large random sequences of lengths <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>, the expected number (<em>E</em>-value) of local alignments with score at least <span class="math inline">\(S\)</span> is given by</p>
 <p><span class="math display">\[E \approx K mn e^{-\lambda S}\]</span></p>
 <p>where <span class="math inline">\(K\)</span> and <span class="math inline">\(\lambda\)</span> are natural scales for the search space size and the scoring system respectively <span class="citation">(Altschul et al. 1990)</span>. Thus, <em>E</em>-value gives a better measure of the <strong>significance</strong> of a match between query and target sequence than percent identity, as it makes a correction for the search space.</p>
-<pre class="r"><code>S &lt;- seq(0, 10, by = 0.5)
-E &lt;- 2^-S
-plot(E ~ S, xlab = &quot;S'&quot;, type = &quot;l&quot;, yaxt = &quot;n&quot;, xaxt= &quot;n&quot;)</code></pre>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABUAAAAPACAMAAADDuCPrAAAAnFBMVEUAAAAAADoAAGYAOjoAOmYAOpAAZrY6AAA6Ojo6OmY6ZmY6ZpA6ZrY6kNtmAABmOgBmOjpmZmZmZpBmkLZmkNtmtv+QOgCQZjqQZmaQkLaQtraQttuQ2/+2ZgC2kGa2tpC2tra2ttu229u22/+2///bkDrbtmbbtpDbtrbb27bb29vb2//b////tmb/25D/27b/29v//7b//9v///8iDRR3AAAACXBIWXMAAB2HAAAdhwGP5fFlAAAVI0lEQVR4nO3da5ecR3WG4TYBHHIAQkJIICYk4RDAIcH8//8WjSTbOoykmafrrdq76rq+IGt17dqtpXUzr1pj3/4CQOS2egGArgQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgAKHaAb0BDDM+UcMnDrT6VxvYy/BGjR440gX/hwEcS0ABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQE9M4XAucS0LtfCZxKQO9+JXAqAb37lcCpBHTAS4EzCeiAlwJnEtABLwXOJKBDXgucSECHvBY4kYAOeS1wIgEd9GLgPAI66MXAeQR00IuB8wjosFcDpxHQYa8GTiOgw14NnEZAh70aOI2ADnw5cBYBHfhy4CwCOvDlwFkEdOjrgZMI6NDXAycR0KGvB04ioIMPAOcQ0MEHgHMI6OADwDkEdPgJ4BQCOvwEcAoBHX4COIWADj8BnEJALzgCnEFALzgCnEFALzgCnEFALzkDnEBALzkDnEBALzkDnEBALzoE7E9ALzoE7E9ALzoE7E9ALzsF7E5ALzsF7E5ALzsF7E5ALzsF7E5ALzwG7E1ALzwG7E1ALzwG7E1ALz0H7ExALz0H7ExALz0H7ExALz4I7EtALz4I7EtALz4I7EtALz8J7EpALz8J7EpALz8J7EpALz8J7EpAJxwF9iSgE44CexLQCUeBPQnolLPAjgR0yllgRwI65SywIwGddBjYj4BOOgzsR0AnHQb2I6DTTgO7EdBpp4HdCOi008BuBHTicWAvAjrxOLAXAZ14HNiLgE48DuxFQKeeB3YioFPPAzsR0KnngZ0I6OQBwD4EdPIAYB8COnkAsA8BnT4B2IWATp8A7EJAp08AdiGgC0YAexDQBSOAPQjoghHAHgR0wQhgDwK6ZAawAwFdMgPYgYAumQHsQEAXDQH6E9BFQ4D+BHTREKA/AV02BehOQJdNAboT0GVTgO4EdOEYoDcBXTgG6E1AF44BehPQhWOA3gR06RygMwFdOgfoTECXzgE6E9DFg4C+BHTxIKAvAV08COhLQJdPAroS0OWTgK4EdPkkoCsBLTAK6ElAC4wCehLQAqOAngS0wCigJwEtMQvoSEBLzAI6EtASs4COBLTIMKAfAS0yDOhHQIsMA/oR0DLTgG4EtMw0oBsBLTMN6EZAC40DehHQQuOAXgS00DigFwEtNQ/oREBLzQM6EdBS84BOBLTUPKATAS02EOhDQIsNBPoQ0GIDgT4EtNxEoAsBLTcR6EJAy00EuhDQgiOBHgS04EigBwEtOBLoQUBLzgQ6ENCSM4EOBLTkTKADAS05E+hAQIsOBeoT0KJDgfoEtOhQoD4BLTsVqE5Ay04FqhPQslOB6gS08FigNgEtPBaoTUALjwVqE9DSc4HKBLT0XKAyAS09F6hMQEvPBSoT0OKDgboEtPhgoC4BLT4YqEtAy08GqhLQ8pOBqgS0/GSgKgFtMBqoSUAbjAZqEtAGo4GaBLTFbKAiAW0xG6hIQFvMBioS0BazgYoEtMlwoB4BbTIcqEdA20wHqhHQNtOBagS00XigFgFtNB6oRUBbzQcqEdBW84FKBLTVfKASAW12AVCHgDa7AKhDQNvdAFQhoO1uAKoQ0IZXADUIaMMrgBoEtOEVQA0C2vIOoAIBbXkHUIGANr0EWE9Am14CrCegbW8BVhPQtrcAqwlo42uAtQS08TXAWgLa+BpgLQFtfQ+wkoC2vgdYSUCbXwSsI6DNLwLWEdD2NwGrCGj7m4BVBLT9TcAqArrBVcAaArrBVcAaArrFXcAKArrFXcAKArrJZcB8ArrJZcB8ArrJZcB8ArrNbcBsArrNbcBsArrRdcBcArrRdcBcArrVfcBMArrVfcBMArrZhcA8ArrZhcA8ArrZhcA8ArrdjcAsArrdjcAsArrhlcAcArrhlcAcArrlncAMArrlncAMArrlncAMArrppcD1BHTTS4HrCei2twJXE9BtbwWuJqAbXwtcS0A3vha4loBufS9wJQHd+l7gSgK69b3AlQR084uB6wjo5hcD1xHQ7W8GriKg298MXEVAD7gauIaAHnA1cA0BPeBq4BoCesTdwBUE9Ii7gSsI6CGXA+MJ6CGXA+MJ6DG3A6MJ6DG3A6MJ6DG3A6MJ6EHXA2MJ6EHXA2MJ6FH3AyMJ6FH3AyMJ6GELAOMI6GELAOMI6HEbAKMI6HEbAKMI6HEbAKMI6IErAGMI6IErAGMI6JE7ACMI6JE7ACMI6HwllgDuJ6DzlVgCuJ+AzldiCeB+ArpAjS2AewnoAjW2AO4loCsUWQO4j4CuUGQN4D4CukSVPYB7COgSVfYA7iGga5RZBMgJ6BplFgFyArpGmUWAnIAuUmcTICWgi9TZBEgJ6CqFVgEy8wP61b/8w0++HH3pUxWqVqFVgMy1Af3zD2/f+fXLH/3fH/743s8tUKlalXYBEpMC+kY1BfS1SrsACQFdptIuQEJA1ym1DPB8ArpOqWWA5xPQhWptAzyXgC5UaxvguQR0pWLrAM8joCsVWwd4HgFd6VZsH+BZBHSpavsAzyGga5VbCHg6AV2r3ELA010e0M9+/qsX/v3z1z94+UMB/Va9jYCnujygjxHQb/kcCfoS0NUKrgQ8zbUB/eq/f/WY//AvVH5DxZ2Ap/Cf9FjOQzx0JaDrlVwK+DQBLaDmVsCnCGgBNbcCPkVAKyi6FvBxAlqBz5GgJQEtoepewMcIaA1lFwM+TEBr8BAPDQloEXU3Az5EQKsovBrwOAGtovBqwOMEtIzKuwGPEdAyfI4E3QhoHaWXA94noIXU3g54l4AW4iEeehHQSoqvB7xNQEupvh/wJgEtpfp+wJsEtJbyCwLfEtBafI4EjQhoMfU3BL4moNU0WBF4RUCr8RAPbQhoOR12BB4IaD0tlgQEtKIWSwICWlKPLQEBLcjnSNCDgFbUZE04nYCW1GVPOJuAltRlTzibgNbUZlE4mYDW5HMkaEBAi+qzKZxLQKtqtCqcSkCr8hAP5QloWZ12hTMJaF2tloUTCWhdrZaFEwloYb22hfMIaGE+R4LaBLSyZuvCaQS0tG77wlkEtDQP8VCZgNbWbmE4iYAW129jOIeAFtdvYziHgFbXcGU4hYBW53MkKEtAy+u4M5xBQOtruTScQEDr8xAPRQloAz23hv0JaAdN14bdCWgHTdeG3QloC133hr0JaAs+R4KKBLSHtovDzgS0ib6bw74EtAkP8VCPgHbReHXYlYC20Xl32JOAttF5d9iTgPbRennYkYD24XMkKEZAG+m9PexHQDtpvj7sRkA78RAPpQhoK933h70IaC/t3wDsREB7af8GYCcC2kz/dwD7ENBmfI4EdQhoNwoKZQhoOwoKVQhoPwoKRQhoQ3u8C+hPQDva5G1AdwLakYd4KEFAW1JQqEBAe1JQKEBAm1JQWE9Au1JQWE5A21JQWE1A+1JQWExAG1NQWEtAO9vs7UA3Atrabu8HehHQ1jzEw0oC2puCwkIC2pyCwjoC2p2CwjIC2p6CwioC2p+CwiICugEFhTUEdAcKCksI6BZ2fV9Qm4DuYds3BpUJ6B48xMMCAroJBYX5BHQXCgrTCeg2FBRmE9B9KChMJqAbUVCYS0B3oqAwlYBuZff3B7UI6F62f4NQiYDuxUM8TCSgm1FQmEdAd6OgMI2AbkdBYRYB3Y+CwiQCuiEFhTkEdEcKClMI6JYUFGYQ0D0d80ZhJQHd1DnvFNYR0E15iIfrCeiuFBQuJ6DbUlC4moDuS0HhYgK6MQWFawnozhQULiWgW1NQuJKA7k1B4UICurnz3jHMI6C7O/AtwywCujsP8XAZAd2egsJVBHR/CgoXEdADKChcQ0BPoKBwCQE9wk1C4QICegYFhQsI6CkUFIYT0GMoKIwmoOfwGA+DCehBFBTGEtCjKCiMJKBnUVAYSEAP4zEexhHQ0ygoDCOg51FQGERAD6SgMIaAnshjPAwhoEdSUBhBQA+loHA/AT2VgsLdBPRYHuPhXgJ6LgWFOwnoyRQU7iKgR1NQuIeAns1jPNxBQA+noJAT0OMpKKQEFAWFkIDiMR5CAoqCQkhAeaCgEBBQXlJQeD4B5RWP8fBsAsprCgrPJaB8Q0HheQSUbykoPIuA8gaP8fAcAsqbFBSeQUB5m4LCkwko71BQeCoB5V0e4+GJBJT3KCg8jYDyCAWFpxBQHuOLUHgCAeVRNwmFTxJQPkBB4VMElA+SUPg4AeXDPMfDRwkoHyOh8BECyscpKHyQgPIpEgofIKB8kud4eJyA8gQSCo8RUJ5EQeF9AsoTSSi8S0B5Ks/x8A4B5ekkFN4ioDyHgsIbBJTnkVD4hoDyTJ7j4WsCyrNJKLwioAQUFB4IKBEJBQEl5TkeBJSYhHI8ASWnoBxOQLmHhHI0AeUunuM5mYByJwnlXALK3RSUUwkoA0goZxJQRvAcz5EElDEklAMJKKPcNJTTCCjjSCiHEVCG0lBOIqAMJqGcQ0AZT0M5hIByBQnlCALKRSSU/Qkol/FlKLsTUC4koexNQLmWhrIxAeVqEsq2BJQJNJQ9CShTSCg7ElBmkVC2I6DM48tQNiOgzCShbEVAmUxD2YeAMp2EsgsBZQUNZQsCyhoSygYElGU0lO4ElIVuNxGlMwFlLQ2lMQFlPRGlKQGlBA2lIwGlDA2lGwGlEl+I0oqAUoyG0oeAUpCI0oOAUpOG0oCAUpeGUpyAUpovRKlMQKlOQylLQOlARClJQGlCQ6lHQGnkpqKUIqD0crupKGUIKA3dZJQSBJSuVJTlBJTeVJSFBJQNqChrCCi7UFGmE1C24g9GmUlA2Y+KMomAsisV5XICytZuvhrlQgLK/m7vWL0P2xBQjqGjjCagHEdHGUVAOZWOcjcB5XAe7MkJKDzQUQICCm96N6R+y/ARAgqPeL+jUsr7BBQ+6tGU+n3ESwIKTySlvEtA4fmklJcEFO7x+JelfqMdQkBhjA+l1G+6jQkoXEBNzyCgcLEPx9Rvx+4EFGb6SE0VtR8BhWU+UVNFLU9AoQ5FbUZAobAnFFV0FxJQ6GRMUZV1EAGF3UnrZQQUjjX2y9kTMy2gwHtWl3W5J/86Df+VHz1wJAGFOlZX8iOe/A6G/5qMHjiSgALjCChASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgNBxAQUYZ3ijRg8cafUvNrCX4Y0aPRDgFAIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCAAoQEFCAkoAAhAQUICShASEABQgIKEBJQgJCA0tdXv/vx57fb7a9+8l+vf+KL2+3vl27EYQSUtn77UM9XvvcqoQLKXAJKV/9ze8N3fv3wUwLKXAJKU3/+4e323V98+eJHf/jliy9Fv/fwIwFlLgGlqd+8juaDP70o6E9f/ZyAMpGA0tQXt8/+7Zt/eFHO7//l5VP9T9dtxHkElKbeCuiLL0G///J/3vg5uJyA0tRjj+t//uGrD5NgDgGlqYc/9/y7P67egrMJKF395uGvL332Nz8XUZYRUNr65i/S/+AXX3761TCegNLXV7/70euEfvaPEsoCAkpvv//lj199M6eCMp+A0t///uzmb9CzgoCygz99fvMXmJhPQOnpi7e/6egL34PEAgJKT6+/efONfxRQphNQenr7of2rf775Jk7mE1B6epHM23e//jfRP3wB6s9AmU9AaerhWzlvf/ufX37910F9Cs98AkpXv33z30j/1h+IwiQCSlt/+tE3+fzsn1Yvw5EElMZ+/7O/fqjnD/7VtyGxhIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChAQUICSgACEBBQgJKEBIQAFCAgoQElCAkIAChP4fOLORbCJXb3EAAAAASUVORK5CYII=" width="672" /></p>
 <p>The probability of finding exactly <span class="math inline">\(z\)</span> HSPs with score <span class="math inline">\(\geq S\)</span> is Poisson distributed<br />
 <span class="math display">\[e^{-E} {E^z \over z!}\]</span></p>
@@ -589,13 +1146,13 @@ plot(E ~ S, xlab = &quot;S'&quot;, type = &quot;l&quot;, yaxt = &quot;n&quot;, x
 </div>
 <div id="database-e-values" class="section level4">
 <h4>Database <em>E</em>-values</h4>
-<p>NCBI BLAST treats the database of sequences as a single very long sequence of length <span class="math inline">\(N\)</span>, and calculate <em>E</em>-values using this in the place of <span class="math inline">\(n\)</span> in the above equation. Thus, the <em>E</em>-values reported in the table above describe how many times you would expect a match by chance in a database containing all of the nucleotide sequences stored in the NCBI database.</p>
+<p>NCBI BLAST treats the database of sequences as a single very long sequence of length <span class="math inline">\(N\)</span>, and calculate <em>E</em>-values using this in the place of <span class="math inline">\(n\)</span> in the above equation. <strong>Thus, the <em>E</em>-values reported in the table above describe how many times you would expect a match by chance in a database containing all of the nucleotide sequences stored in the NCBI database.</strong></p>
 </div>
 </div>
 </div>
 <div id="alignment" class="section level2">
 <h2>Alignment</h2>
-<p>16 sequences were chosen from different species and downloaded. They were then aligned using muscle <span class="citation">(<span class="citeproc-not-found" data-reference-id="muscle"><strong>???</strong></span>)</span> in Seaview <span class="citation">(Gouy, Guindon, and Gascuel 2009)</span>.</p>
+<p>16 sequences were chosen from different species and downloaded. They were then aligned using clustal omega <span class="citation">(Sievers and Higgins 2014)</span> and also with muscle <span class="citation">(Edgar 2004)</span> in Seaview <span class="citation">(Gouy, Guindon, and Gascuel 2009)</span>. Both alignments looked plausible, starting identically up to about 80 base-pairs.</p>
 <pre class="r"><code>aligned &lt;- bio3d::read.fasta(&quot;fasta_15.fst&quot;)
 print.fasta(aligned)</code></pre>
 <pre><code>##              1        .         .         .         .         .         60 
@@ -1068,7 +1625,6 @@ print.fasta(aligned)</code></pre>
 ##   16 sequence rows; 1367 position columns (618 non-gap, 749 gap) 
 ## 
 ## + attr: id, ali, call</code></pre>
-<p>Comment on difference between this alignment and BLAST alignment to query sequence</p>
 </div>
 <div id="neighbour-joining" class="section level2">
 <h2>Neighbour Joining</h2>
@@ -1086,6 +1642,613 @@ print.fasta(aligned)</code></pre>
 <p class="caption">Parsimony tree with bootstrap estimates</p>
 </div>
 </div>
+<div id="maximum-likelihood-tree" class="section level2">
+<h2>Maximum Likelihood Tree</h2>
+<p>ModelFinder <span class="citation">(Kalyaanamoorthy et al. 2017)</span> was used to select the best fitting tree from maximum likelihood models fitted in IQ-Tree (v.1.6.10-Windows) <span class="citation">(Nguyen et al. 2014)</span>. Model robustness was estimated using a bootstrap procedure (UFBoot <span class="citation">(Hoang et al. 2017)</span>).</p>
+<pre class="r"><code># I didn't have room for Linux VM on home computer where I was doing this
+cmd &lt;- &quot;iqtree-1.6.10-Windows\\bin\\iqtree -s fasta_15.nxs -bb 1000 -nt 2&quot;
+system(cmd)</code></pre>
+<pre class="r"><code>cat(read_file(&quot;fasta_15.nxs.log&quot;))</code></pre>
+<pre><code>## IQ-TREE multicore version 1.6.10 for Windows 64-bit built Feb 19 2019
+## Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+## Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+## 
+## Host:    AidanSurface (AVX2, FMA3, 3 GB RAM)
+## Command: C:\KMA712~1\IQTREE~1.10-\bin\iqtree.exe -s fasta_15.nxs -bb 1000
+## Seed:    570929 (Using SPRNG - Scalable Parallel Random Number Generator)
+## Time:    Fri Apr 26 10:59:28 2019
+## Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+## 
+## HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+## HINT: -nt AUTO will automatically determine the best number of threads to use.
+## 
+## Reading alignment file fasta_15.nxs ... Nexus format detected
+## Skipping unknown block (NOTES)...
+## Alignment has 16 sequences with 1367 columns, 347 distinct patterns
+## 209 parsimony-informative, 161 singleton sites, 997 constant sites
+##             Gap/Ambiguity  Composition  p-value
+##    1  AY429653.1   30.87%    passed     47.65%
+##    2  AY429652.1   30.50%    passed     49.16%
+##    3  AY424651.1   10.17%    passed     65.58%
+##    4  AY424649.1   10.24%    passed     80.10%
+##    5  AY424650.1   10.10%    passed     68.58%
+##    6  AY424663.1    9.58%    passed     99.68%
+##    7  AY424658.1    9.58%    passed     97.97%
+##    8  KY608941.1   36.06%    passed      6.38%
+##    9  AY424657.1    9.73%    passed     98.91%
+##   10  AY424655.1    9.58%    passed     99.33%
+##   11  AB292070.1    7.32%    passed     15.70%
+##   12  AB491590.1   30.87%    failed      4.70%
+##   13  EU371738.1   51.50%    failed      0.09%
+##   14  AM748311.1    4.75%    passed     19.51%
+##   15  AY424666.1    4.46%    passed     32.23%
+##   16  AB539128.1   22.97%    passed     40.07%
+## WARNING: 1 sequences contain more than 50% gaps/ambiguity
+## ****  TOTAL        18.02%  2 sequences failed composition chi2 test (p-value&lt;5%; df=3)
+## 
+## 
+## Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+## NOTE: ModelFinder requires 3 MB RAM!
+## ModelFinder will test 286 DNA models (sample size: 1367) ...
+##  No. Model         -LnL         df  AIC          AICc         BIC
+##   1  JC            4354.667     29  8767.333     8768.635     8918.724
+##   2  JC+I          4352.555     30  8765.110     8766.503     8921.722
+##   3  JC+G4         4352.809     30  8765.617     8767.009     8922.228
+##   4  JC+I+G4       4353.698     31  8769.395     8770.882     8931.227
+##   5  JC+R2         4352.876     31  8767.753     8769.239     8929.584
+##   6  JC+R3         4352.779     33  8771.557     8773.241     8943.830
+##  14  F81+F         4355.622     32  8775.244     8776.828     8942.296
+##  15  F81+F+I       4353.511     33  8773.021     8774.705     8945.294
+##  16  F81+F+G4      4353.727     33  8773.453     8775.137     8945.726
+##  17  F81+F+I+G4    4354.572     34  8777.144     8778.931     8954.637
+##  18  F81+F+R2      4353.742     34  8775.484     8777.270     8952.976
+##  19  F81+F+R3      4353.675     36  8779.349     8781.352     8967.283
+##  27  K2P           4265.233     30  8590.466     8591.858     8747.077
+##  28  K2P+I         4262.563     31  8587.127     8588.613     8748.958
+##  29  K2P+G4        4262.751     31  8587.503     8588.989     8749.334
+##  30  K2P+I+G4      4263.211     32  8590.421     8592.004     8757.473
+##  31  K2P+R2        4262.672     32  8589.345     8590.928     8756.397
+##  32  K2P+R3        4262.668     34  8593.337     8595.124     8770.830
+##  40  HKY+F         4265.474     33  8596.949     8598.632     8769.221
+##  41  HKY+F+I       4262.728     34  8593.455     8595.242     8770.948
+##  42  HKY+F+G4      4262.849     34  8593.699     8595.486     8771.191
+##  43  HKY+F+I+G4    4263.300     35  8596.599     8598.492     8779.312
+##  44  HKY+F+R2      4262.778     35  8595.556     8597.450     8778.269
+##  45  HKY+F+R3      4262.777     37  8599.553     8601.669     8792.707
+##  53  TNe           4265.048     31  8592.096     8593.583     8753.928
+##  54  TNe+I         4262.415     32  8588.829     8590.413     8755.881
+##  55  TNe+G4        4262.602     32  8589.204     8590.787     8756.256
+##  56  TNe+I+G4      4262.994     33  8591.988     8593.671     8764.260
+##  57  TNe+R2        4262.519     33  8591.039     8592.722     8763.311
+##  58  TNe+R3        4262.516     35  8595.033     8596.926     8777.746
+##  66  TN+F          4265.118     34  8598.236     8600.023     8775.729
+##  67  TN+F+I        4262.429     35  8594.857     8596.750     8777.570
+##  68  TN+F+G4       4262.551     35  8595.102     8596.995     8777.815
+##  69  TN+F+I+G4     4262.949     36  8597.898     8599.901     8785.832
+##  70  TN+F+R2       4262.479     36  8596.959     8598.962     8784.892
+##  71  TN+F+R3       4262.478     38  8600.956     8603.188     8799.330
+##  79  K3P           4261.836     31  8585.672     8587.158     8747.504
+##  80  K3P+I         4259.222     32  8582.443     8584.027     8749.495
+##  81  K3P+G4        4259.379     32  8582.758     8584.341     8749.809
+##  82  K3P+I+G4      4259.737     33  8585.475     8587.158     8757.747
+##  83  K3P+R2        4259.307     33  8584.614     8586.297     8756.886
+##  84  K3P+R3        4259.305     35  8588.610     8590.503     8771.323
+##  92  K3Pu+F        4262.162     34  8592.324     8594.110     8769.816
+##  93  K3Pu+F+I      4259.475     35  8588.950     8590.843     8771.663
+##  94  K3Pu+F+G4     4259.564     35  8589.127     8591.020     8771.840
+##  95  K3Pu+F+I+G4   4259.930     36  8591.859     8593.862     8779.793
+##  96  K3Pu+F+R2     4259.503     36  8591.007     8593.010     8778.940
+##  97  K3Pu+F+R3     4259.503     38  8595.006     8597.238     8793.380
+## 105  TPM2+F        4261.480     34  8590.959     8592.746     8768.452
+## 106  TPM2+F+I      4258.472     35  8586.944     8588.837     8769.657
+## 107  TPM2+F+G4     4258.530     35  8587.060     8588.954     8769.774
+## 108  TPM2+F+I+G4   4258.790     36  8589.580     8591.583     8777.513
+## 109  TPM2+F+R2     4258.472     36  8588.944     8590.947     8776.877
+## 110  TPM2+F+R3     4258.471     38  8592.942     8595.174     8791.316
+## 118  TPM2u+F       4261.479     34  8590.958     8592.745     8768.451
+## 119  TPM2u+F+I     4258.472     35  8586.943     8588.836     8769.656
+## 120  TPM2u+F+G4    4258.530     35  8587.060     8588.954     8769.774
+## 121  TPM2u+F+I+G4  4258.769     36  8589.539     8591.542     8777.472
+## 122  TPM2u+F+R2    4258.471     36  8588.943     8590.946     8776.876
+## 123  TPM2u+F+R3    4258.471     38  8592.941     8595.173     8791.315
+## 131  TPM3+F        4259.031     34  8586.062     8587.849     8763.555
+## 132  TPM3+F+I      4256.241     35  8582.481     8584.375     8765.195
+## 133  TPM3+F+G4     4256.303     35  8582.606     8584.499     8765.319
+## 134  TPM3+F+I+G4   4256.596     36  8585.193     8587.196     8773.126
+## 135  TPM3+F+R2     4256.252     36  8584.504     8586.507     8772.438
+## 136  TPM3+F+R3     4256.252     38  8588.504     8590.736     8786.878
+## 144  TPM3u+F       4259.031     34  8586.062     8587.849     8763.555
+## 145  TPM3u+F+I     4256.241     35  8582.481     8584.375     8765.195
+## 146  TPM3u+F+G4    4256.303     35  8582.605     8584.498     8765.318
+## 147  TPM3u+F+I+G4  4256.573     36  8585.146     8587.149     8773.080
+## 148  TPM3u+F+R2    4256.252     36  8584.504     8586.507     8772.438
+## 149  TPM3u+F+R3    4256.252     38  8588.504     8590.736     8786.878
+## 157  TIMe          4261.649     32  8587.298     8588.881     8754.350
+## 158  TIMe+I        4259.070     33  8584.141     8585.824     8756.413
+## 159  TIMe+G4       4259.227     33  8584.453     8586.137     8756.726
+## 160  TIMe+I+G4     4259.442     34  8586.885     8588.672     8764.378
+## 161  TIMe+R2       4259.155     34  8586.310     8588.097     8763.803
+## 162  TIMe+R3       4259.155     36  8590.310     8592.313     8778.243
+## 170  TIM+F         4261.804     35  8593.608     8595.501     8776.321
+## 171  TIM+F+I       4259.173     36  8590.346     8592.349     8778.280
+## 172  TIM+F+G4      4259.263     36  8590.525     8592.528     8778.459
+## 173  TIM+F+I+G4    4259.507     37  8593.013     8595.129     8786.167
+## 174  TIM+F+R2      4259.202     37  8592.404     8594.520     8785.558
+## 175  TIM+F+R3      4259.202     39  8596.404     8598.755     8799.998
+## 183  TIM2e         4262.623     32  8589.247     8590.830     8756.299
+## 184  TIM2e+I       4259.901     33  8585.803     8587.486     8758.075
+## 185  TIM2e+G4      4260.046     33  8586.091     8587.775     8758.364
+## 186  TIM2e+I+G4    4260.181     34  8588.363     8590.150     8765.856
+## 187  TIM2e+R2      4259.964     34  8587.928     8589.715     8765.421
+## 188  TIM2e+R3      4259.964     36  8591.928     8593.931     8779.862
+## 196  TIM2+F        4261.130     35  8592.260     8594.154     8774.973
+## 197  TIM2+F+I      4258.192     36  8588.384     8590.387     8776.317
+## 198  TIM2+F+G4     4258.250     36  8588.500     8590.503     8776.434
+## 199  TIM2+F+I+G4   4258.400     37  8590.800     8592.916     8783.954
+## 200  TIM2+F+R2     4258.192     37  8590.383     8592.499     8783.537
+## 201  TIM2+F+R3     4258.191     39  8594.382     8596.733     8797.976
+## 209  TIM3e         4259.057     32  8582.113     8583.697     8749.165
+## 210  TIM3e+I       4256.406     33  8578.813     8580.496     8751.085
+## 211  TIM3e+G4      4256.540     33  8579.081     8580.764     8751.353
+## 212  TIM3e+I+G4    4256.686     34  8581.372     8583.159     8758.864
+## 213  TIM3e+R2      4256.474     34  8580.949     8582.735     8758.441
+## 214  TIM3e+R3      4256.474     36  8584.948     8586.951     8772.882
+## 222  TIM3+F        4258.671     35  8587.342     8589.236     8770.055
+## 223  TIM3+F+I      4255.931     36  8583.862     8585.865     8771.796
+## 224  TIM3+F+G4     4255.994     36  8583.987     8585.990     8771.921
+## 225  TIM3+F+I+G4   4256.173     37  8586.347     8588.462     8779.500
+## 226  TIM3+F+R2     4255.943     37  8585.886     8588.002     8779.040
+## 227  TIM3+F+R3     4255.943     39  8589.886     8592.237     8793.480
+## 235  TVMe          4254.228     33  8574.456     8576.139     8746.728
+## 236  TVMe+I        4251.508     34  8571.015     8572.802     8748.508
+## 237  TVMe+G4       4251.573     34  8571.146     8572.933     8748.639
+## 238  TVMe+I+G4     4251.738     35  8573.476     8575.369     8756.189
+## 239  TVMe+R2       4251.523     35  8573.047     8574.940     8755.760
+## 240  TVMe+R3       4251.523     37  8577.046     8579.162     8770.200
+## 248  TVM+F         4252.466     36  8576.933     8578.936     8764.866
+## 249  TVM+F+I       4249.473     37  8572.945     8575.061     8766.099
+## 250  TVM+F+G4      4249.439     37  8572.879     8574.995     8766.033
+## 251  TVM+F+I+G4    4249.628     38  8575.256     8577.488     8773.630
+## 252  TVM+F+R2      4249.419     38  8574.838     8577.070     8773.212
+## 253  TVM+F+R3      4249.419     40  8578.838     8581.312     8787.653
+## 261  SYM           4254.042     34  8576.085     8577.872     8753.578
+## 262  SYM+I         4251.354     35  8572.709     8574.602     8755.422
+## 263  SYM+G4        4251.420     35  8572.839     8574.733     8755.552
+## 264  SYM+I+G4      4251.571     36  8575.142     8577.145     8763.075
+## 265  SYM+R2        4251.369     36  8574.739     8576.742     8762.672
+## 266  SYM+R3        4251.369     38  8578.739     8580.971     8777.113
+## 274  GTR+F         4252.110     37  8578.220     8580.336     8771.374
+## 275  GTR+F+I       4249.176     38  8574.353     8576.585     8772.727
+## 276  GTR+F+G4      4249.142     38  8574.283     8576.515     8772.657
+## 277  GTR+F+I+G4    4249.326     39  8576.652     8579.003     8780.246
+## 278  GTR+F+R2      4249.119     39  8576.237     8578.589     8779.832
+## 279  GTR+F+R3      4249.119     41  8580.237     8582.837     8794.273
+## Akaike Information Criterion:           TVMe+I
+## Corrected Akaike Information Criterion: TVMe+I
+## Bayesian Information Criterion:         TVMe
+## Best-fit model: TVMe chosen according to BIC
+## 
+## All model information printed to fasta_15.nxs.model.gz
+## CPU time for ModelFinder: 1.938 seconds (0h:0m:1s)
+## Wall-clock time for ModelFinder: 2.281 seconds (0h:0m:2s)
+## Generating 1000 samples for ultrafast bootstrap (seed: 570929)...
+## 
+## NOTE: 1 MB RAM (0 GB) is required!
+## Estimate model parameters (epsilon = 0.100)
+## 1. Initial log-likelihood: -4354.758
+## 2. Current log-likelihood: -4254.327
+## Optimal log-likelihood: -4254.232
+## Rate parameters:  A-C: 1.33135  A-G: 5.69364  A-T: 1.15818  C-G: 2.61956  C-T: 5.69364  G-T: 1.00000
+## Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+## Parameters optimization took 2 rounds (0.014 sec)
+## Computing ML distances based on estimated model parameters... 0.000 sec
+## Computing BIONJ tree...
+## 0.011 seconds
+## Log-likelihood of BIONJ tree: -4258.106
+## --------------------------------------------------------------------
+## |             INITIALIZING CANDIDATE TREE SET                      |
+## --------------------------------------------------------------------
+## Generating 98 parsimony trees... 0.220 second
+## Computing log-likelihood of 98 initial trees ... 0.269 seconds
+## Current best score: -4254.232
+## 
+## Do NNI search on 20 best initial trees
+## Estimate model parameters (epsilon = 0.100)
+## BETTER TREE FOUND at iteration 1: -4254.230
+## UPDATE BEST LOG-LIKELIHOOD: -4254.229
+## UPDATE BEST LOG-LIKELIHOOD: -4254.229
+## UPDATE BEST LOG-LIKELIHOOD: -4254.229
+## UPDATE BEST LOG-LIKELIHOOD: -4254.229
+## Iteration 10 / LogL: -4254.229 / Time: 0h:0m:0s
+## UPDATE BEST LOG-LIKELIHOOD: -4254.229
+## UPDATE BEST LOG-LIKELIHOOD: -4254.229
+## Iteration 20 / LogL: -4254.238 / Time: 0h:0m:1s
+## Finish initializing candidate tree set (1)
+## Current best tree score: -4254.229 / CPU time: 0.980
+## Number of iterations: 20
+## --------------------------------------------------------------------
+## |               OPTIMIZING CANDIDATE TREE SET                      |
+## --------------------------------------------------------------------
+## UPDATE BEST LOG-LIKELIHOOD: -4254.229
+## Iteration 30 / LogL: -4254.230 / Time: 0h:0m:1s (0h:0m:3s left)
+## Iteration 40 / LogL: -4254.233 / Time: 0h:0m:2s (0h:0m:3s left)
+## Iteration 50 / LogL: -4254.319 / Time: 0h:0m:2s (0h:0m:2s left)
+## Log-likelihood cutoff on original alignment: -4291.176
+## Iteration 60 / LogL: -4254.232 / Time: 0h:0m:2s (0h:0m:1s left)
+## Iteration 70 / LogL: -4254.229 / Time: 0h:0m:2s (0h:0m:1s left)
+## Iteration 80 / LogL: -4254.229 / Time: 0h:0m:3s (0h:0m:0s left)
+## Iteration 90 / LogL: -4254.229 / Time: 0h:0m:3s (0h:0m:0s left)
+## Iteration 100 / LogL: -4254.229 / Time: 0h:0m:3s (0h:0m:0s left)
+## Log-likelihood cutoff on original alignment: -4291.176
+## NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+## TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:3s
+## 
+## --------------------------------------------------------------------
+## |                    FINALIZING TREE SEARCH                        |
+## --------------------------------------------------------------------
+## Performs final model parameters optimization
+## Estimate model parameters (epsilon = 0.010)
+## 1. Initial log-likelihood: -4254.229
+## Optimal log-likelihood: -4254.228
+## Rate parameters:  A-C: 1.33477  A-G: 5.70178  A-T: 1.16074  C-G: 2.62994  C-T: 5.70178  G-T: 1.00000
+## Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+## Parameters optimization took 1 rounds (0.003 sec)
+## BEST SCORE FOUND : -4254.228
+## Creating bootstrap support values...
+## Split supports printed to NEXUS file fasta_15.nxs.splits.nex
+## Total tree length: 0.434
+## 
+## Total number of iterations: 102
+## CPU time used for tree search: 3.562 sec (0h:0m:3s)
+## Wall-clock time used for tree search: 3.778 sec (0h:0m:3s)
+## Total CPU time used: 3.719 sec (0h:0m:3s)
+## Total wall-clock time used: 4.014 sec (0h:0m:4s)
+## 
+## Computing bootstrap consensus tree...
+## Reading input file fasta_15.nxs.splits.nex...
+## 16 taxa and 59 splits.
+## Consensus tree written to fasta_15.nxs.contree
+## Reading input trees file fasta_15.nxs.contree
+## Log-likelihood of consensus tree: -4254.229
+## 
+## Analysis results written to: 
+##   IQ-TREE report:                fasta_15.nxs.iqtree
+##   Maximum-likelihood tree:       fasta_15.nxs.treefile
+##   Likelihood distances:          fasta_15.nxs.mldist
+## 
+## Ultrafast bootstrap approximation results written to:
+##   Split support values:          fasta_15.nxs.splits.nex
+##   Consensus tree:                fasta_15.nxs.contree
+##   Screen log file:               fasta_15.nxs.log
+## 
+## Date and Time: Fri Apr 26 10:59:35 2019</code></pre>
+<pre class="r"><code>cat(read_file(&quot;fasta_15.nxs.iqtree&quot;))</code></pre>
+<pre><code>## IQ-TREE 1.6.10 built Feb 19 2019
+## 
+## Input file name: fasta_15.nxs
+## Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+## Random seed number: 570929
+## 
+## REFERENCES
+## ----------
+## 
+## To cite ModelFinder please use: 
+## 
+## Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+## and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+## accurate phylogenetic estimates. Nature Methods, 14:587–589.
+## https://doi.org/10.1038/nmeth.4285
+## 
+## To cite IQ-TREE please use:
+## 
+## Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+## (2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+## maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+## https://doi.org/10.1093/molbev/msu300
+## 
+## Since you used ultrafast bootstrap (UFBoot) please also cite: 
+## 
+## Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+## and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+## approximation. Mol Biol Evol, in press.
+## https://doi.org/10.1093/molbev/msx281
+## 
+## SEQUENCE ALIGNMENT
+## ------------------
+## 
+## Input data: 16 sequences with 1367 nucleotide sites
+## Number of constant sites: 997 (= 72.9334% of all sites)
+## Number of invariant (constant or ambiguous constant) sites: 997 (= 72.9334% of all sites)
+## Number of parsimony informative sites: 209
+## Number of distinct site patterns: 347
+## 
+## ModelFinder
+## -----------
+## 
+## Best-fit model according to BIC: TVMe
+## 
+## List of models sorted by BIC scores: 
+## 
+## Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+## TVMe             -4254.2279   8574.4558 - 0.0309   8576.1392 - 0.0350   8746.7281 + 0.1964
+## K2P              -4265.2331   8590.4662 - 0.0000   8591.8585 - 0.0000   8747.0775 + 0.1649
+## K3P              -4261.8360   8585.6721 - 0.0001   8587.1582 - 0.0001   8747.5037 + 0.1333
+## TVMe+I           -4251.5077   8571.0154 + 0.1725   8572.8022 + 0.1854   8748.5081 + 0.0806
+## TVMe+G4          -4251.5731   8571.1461 + 0.1616   8572.9329 + 0.1737   8748.6388 + 0.0755
+## K2P+I            -4262.5633   8587.1266 - 0.0001   8588.6127 - 0.0001   8748.9582 + 0.0644
+## TIM3e            -4259.0567   8582.1134 - 0.0007   8583.6966 - 0.0008   8749.1654 + 0.0581
+## K2P+G4           -4262.7514   8587.5028 - 0.0000   8588.9890 - 0.0001   8749.3344 + 0.0534
+## K3P+I            -4259.2217   8582.4433 - 0.0006   8584.0265 - 0.0007   8749.4953 - 0.0492
+## K3P+G4           -4259.3788   8582.7575 - 0.0005   8584.3407 - 0.0006   8749.8095 - 0.0421
+## TIM3e+I          -4256.4063   8578.8126 - 0.0035   8580.4960 - 0.0040   8751.0849 - 0.0222
+## TIM3e+G4         -4256.5403   8579.0805 - 0.0031   8580.7639 - 0.0035   8751.3528 - 0.0194
+## SYM              -4254.0424   8576.0848 - 0.0137   8577.8716 - 0.0147   8753.5775 - 0.0064
+## TNe              -4265.0482   8592.0965 - 0.0000   8593.5826 - 0.0000   8753.9280 - 0.0054
+## TIMe             -4261.6491   8587.2981 - 0.0001   8588.8813 - 0.0001   8754.3501 - 0.0043
+## SYM+I            -4251.3544   8572.7088 + 0.0740   8574.6022 + 0.0754   8755.4219 - 0.0025
+## SYM+G4           -4251.4197   8572.8393 + 0.0693   8574.7326 + 0.0706   8755.5524 - 0.0024
+## TVMe+R2          -4251.5233   8573.0466 + 0.0625   8574.9399 + 0.0637   8755.7597 - 0.0021
+## TNe+I            -4262.4147   8588.8294 - 0.0000   8590.4126 - 0.0000   8755.8814 - 0.0020
+## TVMe+I+G4        -4251.7381   8573.4761 + 0.0504   8575.3694 + 0.0514   8756.1892 - 0.0017
+## TNe+G4           -4262.6018   8589.2036 - 0.0000   8590.7868 - 0.0000   8756.2555 - 0.0017
+## TIM2e            -4262.6234   8589.2468 - 0.0000   8590.8300 - 0.0000   8756.2988 - 0.0016
+## K2P+R2           -4262.6723   8589.3446 - 0.0000   8590.9278 - 0.0000   8756.3966 - 0.0016
+## TIMe+I           -4259.0704   8584.1408 - 0.0002   8585.8242 - 0.0003   8756.4131 - 0.0015
+## TIMe+G4          -4259.2267   8584.4534 - 0.0002   8586.1368 - 0.0002   8756.7257 - 0.0013
+## K3P+R2           -4259.3070   8584.6140 - 0.0002   8586.2974 - 0.0002   8756.8863 - 0.0012
+## K2P+I+G4         -4263.2106   8590.4212 - 0.0000   8592.0044 - 0.0000   8757.4732 - 0.0009
+## K3P+I+G4         -4259.7375   8585.4750 - 0.0001   8587.1584 - 0.0001   8757.7473 - 0.0008
+## TIM2e+I          -4259.9015   8585.8030 - 0.0001   8587.4864 - 0.0001   8758.0753 - 0.0007
+## TIM2e+G4         -4260.0456   8586.0913 - 0.0001   8587.7747 - 0.0001   8758.3636 - 0.0006
+## TIM3e+R2         -4256.4743   8580.9487 - 0.0012   8582.7354 - 0.0013   8758.4414 - 0.0006
+## TIM3e+I+G4       -4256.6859   8581.3717 - 0.0010   8583.1585 - 0.0010   8758.8644 - 0.0005
+## SYM+R2           -4251.3694   8574.7389 - 0.0268   8576.7419 - 0.0259   8762.6724 - 0.0001
+## SYM+I+G4         -4251.5710   8575.1419 - 0.0219   8577.1449 - 0.0211   8763.0754 - 0.0001
+## TNe+R2           -4262.5194   8591.0387 - 0.0000   8592.7222 - 0.0000   8763.3111 - 0.0000
+## TPM3+F           -4259.0312   8586.0625 - 0.0001   8587.8493 - 0.0001   8763.5552 - 0.0000
+## TPM3u+F          -4259.0312   8586.0625 - 0.0001   8587.8493 - 0.0001   8763.5552 - 0.0000
+## TIMe+R2          -4259.1550   8586.3101 - 0.0001   8588.0969 - 0.0001   8763.8028 - 0.0000
+## TNe+I+G4         -4262.9939   8591.9879 - 0.0000   8593.6713 - 0.0000   8764.2602 - 0.0000
+## TIMe+I+G4        -4259.4425   8586.8849 - 0.0001   8588.6717 - 0.0001   8764.3776 - 0.0000
+## TVM+F            -4252.4664   8576.9328 - 0.0089   8578.9359 - 0.0086   8764.8663 - 0.0000
+## TPM3u+F+I        -4256.2407   8582.4815 - 0.0006   8584.3748 - 0.0006   8765.1946 - 0.0000
+## TPM3+F+I         -4256.2407   8582.4815 - 0.0006   8584.3748 - 0.0006   8765.1946 - 0.0000
+## TPM3u+F+G4       -4256.3026   8582.6051 - 0.0005   8584.4984 - 0.0005   8765.3182 - 0.0000
+## TPM3+F+G4        -4256.3028   8582.6056 - 0.0005   8584.4989 - 0.0005   8765.3187 - 0.0000
+## TIM2e+R2         -4259.9641   8587.9283 - 0.0000   8589.7151 - 0.0000   8765.4210 - 0.0000
+## TIM2e+I+G4       -4260.1814   8588.3629 - 0.0000   8590.1497 - 0.0000   8765.8556 - 0.0000
+## TVM+F+G4         -4249.4394   8572.8787 + 0.0679   8574.9946 + 0.0620   8766.0326 - 0.0000
+## TVM+F+I          -4249.4727   8572.9454 + 0.0657   8575.0613 + 0.0599   8766.0992 - 0.0000
+## TPM2u+F          -4261.4792   8590.9584 - 0.0000   8592.7452 - 0.0000   8768.4512 - 0.0000
+## TPM2+F           -4261.4797   8590.9594 - 0.0000   8592.7462 - 0.0000   8768.4521 - 0.0000
+## HKY+F            -4265.4745   8596.9489 - 0.0000   8598.6323 - 0.0000   8769.2213 - 0.0000
+## TPM2u+F+I        -4258.4716   8586.9432 - 0.0001   8588.8365 - 0.0001   8769.6562 - 0.0000
+## TPM2+F+I         -4258.4718   8586.9435 - 0.0001   8588.8368 - 0.0001   8769.6566 - 0.0000
+## TPM2+F+G4        -4258.5302   8587.0604 - 0.0001   8588.9537 - 0.0001   8769.7735 - 0.0000
+## TPM2u+F+G4       -4258.5302   8587.0605 - 0.0001   8588.9538 - 0.0001   8769.7735 - 0.0000
+## K3Pu+F           -4262.1618   8592.3237 - 0.0000   8594.1105 - 0.0000   8769.8164 - 0.0000
+## TIM3+F           -4258.6711   8587.3422 - 0.0000   8589.2355 - 0.0001   8770.0553 - 0.0000
+## TVMe+R3          -4251.5232   8577.0465 - 0.0085   8579.1624 - 0.0077   8770.2003 - 0.0000
+## K2P+R3           -4262.6685   8593.3370 - 0.0000   8595.1238 - 0.0000   8770.8297 - 0.0000
+## HKY+F+I          -4262.7275   8593.4551 - 0.0000   8595.2419 - 0.0000   8770.9478 - 0.0000
+## HKY+F+G4         -4262.8494   8593.6987 - 0.0000   8595.4855 - 0.0000   8771.1914 - 0.0000
+## K3P+R3           -4259.3048   8588.6096 - 0.0000   8590.5029 - 0.0000   8771.3227 - 0.0000
+## GTR+F            -4252.1101   8578.2203 - 0.0047   8580.3361 - 0.0043   8771.3741 - 0.0000
+## K3Pu+F+I         -4259.4748   8588.9496 - 0.0000   8590.8429 - 0.0000   8771.6627 - 0.0000
+## TIM3+F+I         -4255.9311   8583.8621 - 0.0003   8585.8651 - 0.0003   8771.7956 - 0.0000
+## K3Pu+F+G4        -4259.5635   8589.1271 - 0.0000   8591.0204 - 0.0000   8771.8402 - 0.0000
+## TIM3+F+G4        -4255.9937   8583.9874 - 0.0003   8585.9904 - 0.0003   8771.9209 - 0.0000
+## TPM3+F+R2        -4256.2521   8584.5041 - 0.0002   8586.5071 - 0.0002   8772.4376 - 0.0000
+## TPM3u+F+R2       -4256.2521   8584.5043 - 0.0002   8586.5073 - 0.0002   8772.4378 - 0.0000
+## GTR+F+G4         -4249.1416   8574.2833 - 0.0337   8576.5152 - 0.0290   8772.6575 - 0.0000
+## GTR+F+I          -4249.1764   8574.3528 - 0.0325   8576.5847 - 0.0280   8772.7270 - 0.0000
+## TIM3e+R3         -4256.4742   8584.9485 - 0.0002   8586.9515 - 0.0002   8772.8819 - 0.0000
+## TPM3u+F+I+G4     -4256.5732   8585.1464 - 0.0001   8587.1494 - 0.0001   8773.0799 - 0.0000
+## TPM3+F+I+G4      -4256.5964   8585.1928 - 0.0001   8587.1958 - 0.0001   8773.1262 - 0.0000
+## TVM+F+R2         -4249.4191   8574.8381 - 0.0255   8577.0701 - 0.0220   8773.2123 - 0.0000
+## TVM+F+I+G4       -4249.6279   8575.2559 - 0.0207   8577.4878 - 0.0178   8773.6301 - 0.0000
+## TIM2+F           -4261.1301   8592.2602 - 0.0000   8594.1536 - 0.0000   8774.9733 - 0.0000
+## TN+F             -4265.1182   8598.2365 - 0.0000   8600.0233 - 0.0000   8775.7292 - 0.0000
+## TIM2+F+I         -4258.1918   8588.3836 - 0.0000   8590.3866 - 0.0000   8776.3171 - 0.0000
+## TIM+F            -4261.8040   8593.6081 - 0.0000   8595.5014 - 0.0000   8776.3211 - 0.0000
+## TIM2+F+G4        -4258.2500   8588.5001 - 0.0000   8590.5031 - 0.0000   8776.4335 - 0.0000
+## TPM2u+F+R2       -4258.4713   8588.9426 - 0.0000   8590.9456 - 0.0000   8776.8761 - 0.0000
+## TPM2+F+R2        -4258.4719   8588.9438 - 0.0000   8590.9468 - 0.0000   8776.8772 - 0.0000
+## SYM+R3           -4251.3693   8578.7387 - 0.0036   8580.9706 - 0.0031   8777.1129 - 0.0000
+## TPM2u+F+I+G4     -4258.7693   8589.5386 - 0.0000   8591.5416 - 0.0000   8777.4720 - 0.0000
+## TPM2+F+I+G4      -4258.7900   8589.5800 - 0.0000   8591.5830 - 0.0000   8777.5135 - 0.0000
+## TN+F+I           -4262.4286   8594.8571 - 0.0000   8596.7504 - 0.0000   8777.5702 - 0.0000
+## TNe+R3           -4262.5164   8595.0328 - 0.0000   8596.9261 - 0.0000   8777.7459 - 0.0000
+## TN+F+G4          -4262.5509   8595.1018 - 0.0000   8596.9952 - 0.0000   8777.8149 - 0.0000
+## TIMe+R3          -4259.1548   8590.3095 - 0.0000   8592.3125 - 0.0000   8778.2430 - 0.0000
+## HKY+F+R2         -4262.7781   8595.5562 - 0.0000   8597.4496 - 0.0000   8778.2693 - 0.0000
+## TIM+F+I          -4259.1731   8590.3461 - 0.0000   8592.3491 - 0.0000   8778.2796 - 0.0000
+## TIM+F+G4         -4259.2626   8590.5253 - 0.0000   8592.5283 - 0.0000   8778.4587 - 0.0000
+## K3Pu+F+R2        -4259.5035   8591.0070 - 0.0000   8593.0100 - 0.0000   8778.9405 - 0.0000
+## TIM3+F+R2        -4255.9428   8585.8857 - 0.0001   8588.0016 - 0.0001   8779.0395 - 0.0000
+## HKY+F+I+G4       -4263.2996   8596.5991 - 0.0000   8598.4924 - 0.0000   8779.3122 - 0.0000
+## TIM3+F+I+G4      -4256.1733   8586.3466 - 0.0001   8588.4625 - 0.0001   8779.5004 - 0.0000
+## K3Pu+F+I+G4      -4259.9296   8591.8592 - 0.0000   8593.8622 - 0.0000   8779.7926 - 0.0000
+## GTR+F+R2         -4249.1187   8576.2375 - 0.0127   8578.5886 - 0.0103   8779.8320 - 0.0000
+## TIM2e+R3         -4259.9642   8591.9284 - 0.0000   8593.9314 - 0.0000   8779.8619 - 0.0000
+## GTR+F+I+G4       -4249.3258   8576.6516 - 0.0103   8579.0027 - 0.0084   8780.2462 - 0.0000
+## TIM2+F+R2        -4258.1915   8590.3830 - 0.0000   8592.4989 - 0.0000   8783.5368 - 0.0000
+## TIM2+F+I+G4      -4258.4001   8590.8003 - 0.0000   8592.9162 - 0.0000   8783.9541 - 0.0000
+## TN+F+R2          -4262.4793   8596.9587 - 0.0000   8598.9617 - 0.0000   8784.8921 - 0.0000
+## TIM+F+R2         -4259.2022   8592.4045 - 0.0000   8594.5203 - 0.0000   8785.5583 - 0.0000
+## TN+F+I+G4        -4262.9492   8597.8983 - 0.0000   8599.9013 - 0.0000   8785.8318 - 0.0000
+## TIM+F+I+G4       -4259.5066   8593.0132 - 0.0000   8595.1291 - 0.0000   8786.1670 - 0.0000
+## TPM3+F+R3        -4256.2521   8588.5042 - 0.0000   8590.7361 - 0.0000   8786.8784 - 0.0000
+## TPM3u+F+R3       -4256.2521   8588.5043 - 0.0000   8590.7362 - 0.0000   8786.8785 - 0.0000
+## TVM+F+R3         -4249.4191   8578.8382 - 0.0035   8581.3118 - 0.0026   8787.6532 - 0.0000
+## TPM2u+F+R3       -4258.4705   8592.9410 - 0.0000   8595.1729 - 0.0000   8791.3152 - 0.0000
+## TPM2+F+R3        -4258.4709   8592.9419 - 0.0000   8595.1738 - 0.0000   8791.3161 - 0.0000
+## HKY+F+R3         -4262.7766   8599.5531 - 0.0000   8601.6690 - 0.0000   8792.7070 - 0.0000
+## K3Pu+F+R3        -4259.5029   8595.0057 - 0.0000   8597.2377 - 0.0000   8793.3799 - 0.0000
+## TIM3+F+R3        -4255.9429   8589.8858 - 0.0000   8592.2369 - 0.0000   8793.4803 - 0.0000
+## GTR+F+R3         -4249.1187   8580.2374 - 0.0017   8582.8366 - 0.0012   8794.2727 - 0.0000
+## TIM2+F+R3        -4258.1909   8594.3818 - 0.0000   8596.7330 - 0.0000   8797.9764 - 0.0000
+## TN+F+R3          -4262.4779   8600.9558 - 0.0000   8603.1878 - 0.0000   8799.3300 - 0.0000
+## TIM+F+R3         -4259.2018   8596.4035 - 0.0000   8598.7547 - 0.0000   8799.9981 - 0.0000
+## JC               -4354.6666   8767.3331 - 0.0000   8768.6345 - 0.0000   8918.7239 - 0.0000
+## JC+I             -4352.5552   8765.1105 - 0.0000   8766.5027 - 0.0000   8921.7217 - 0.0000
+## JC+G4            -4352.8085   8765.6171 - 0.0000   8767.0093 - 0.0000   8922.2283 - 0.0000
+## JC+R2            -4352.8763   8767.7526 - 0.0000   8769.2388 - 0.0000   8929.5842 - 0.0000
+## JC+I+G4          -4353.6977   8769.3954 - 0.0000   8770.8815 - 0.0000   8931.2270 - 0.0000
+## F81+F            -4355.6222   8775.2443 - 0.0000   8776.8275 - 0.0000   8942.2963 - 0.0000
+## JC+R3            -4352.7786   8771.5573 - 0.0000   8773.2407 - 0.0000   8943.8296 - 0.0000
+## F81+F+I          -4353.5107   8773.0213 - 0.0000   8774.7047 - 0.0000   8945.2937 - 0.0000
+## F81+F+G4         -4353.7267   8773.4534 - 0.0000   8775.1368 - 0.0000   8945.7257 - 0.0000
+## F81+F+R2         -4353.7419   8775.4837 - 0.0000   8777.2705 - 0.0000   8952.9764 - 0.0000
+## F81+F+I+G4       -4354.5721   8777.1442 - 0.0000   8778.9310 - 0.0000   8954.6369 - 0.0000
+## F81+F+R3         -4353.6746   8779.3491 - 0.0000   8781.3521 - 0.0000   8967.2826 - 0.0000
+## 
+## AIC, w-AIC   : Akaike information criterion scores and weights.
+## AICc, w-AICc : Corrected AIC scores and weights.
+## BIC, w-BIC   : Bayesian information criterion scores and weights.
+## 
+## Plus signs denote the 95% confidence sets.
+## Minus signs denote significant exclusion.
+## 
+## SUBSTITUTION PROCESS
+## --------------------
+## 
+## Model of substitution: TVMe
+## 
+## Rate parameter R:
+## 
+##   A-C: 1.3348
+##   A-G: 5.7018
+##   A-T: 1.1607
+##   C-G: 2.6299
+##   C-T: 5.7018
+##   G-T: 1.0000
+## 
+## State frequencies: (equal frequencies)
+## 
+## Rate matrix Q:
+## 
+##   A   -0.9353    0.1523    0.6506    0.1324
+##   C    0.1523    -1.103    0.3001    0.6506
+##   G    0.6506    0.3001    -1.065    0.1141
+##   T    0.1324    0.6506    0.1141   -0.8971
+## 
+## Model of rate heterogeneity: Uniform
+## 
+## MAXIMUM LIKELIHOOD TREE
+## -----------------------
+## 
+## Log-likelihood of the tree: -4254.2282 (s.e. 96.8007)
+## Unconstrained log-likelihood (without tree): -6119.2834
+## Number of free parameters (#branches + #model parameters): 33
+## Akaike information criterion (AIC) score: 8574.4564
+## Corrected Akaike information criterion (AICc) score: 8576.1398
+## Bayesian information criterion (BIC) score: 8746.7287
+## 
+## Total tree length (sum of branch lengths): 0.4342
+## Sum of internal branch lengths: 0.2006 (46.1900% of tree length)
+## 
+## WARNING: 1 near-zero internal branches (&lt;0.0007) should be treated with caution
+##          Such branches are denoted by '**' in the figure below
+## 
+## NOTE: Tree is UNROOTED although outgroup taxon 'AY429653.1' is drawn at root
+## Numbers in parentheses are  ultrafast bootstrap support (%)
+## 
+## +**AY429653.1
+## |
+## +**AY429652.1
+## |
+## |     +--AY424651.1
+## |  +**| (51)
+## |  |  +--AY424650.1
+## +--| (95)
+##    |  +--AY424649.1
+##    +--| (61)
+##       |              +--AY424663.1
+##       |           +--| (98)
+##       |           |  +---AY424658.1
+##       |       +---| (99)
+##       |       |   |     +--KY608941.1
+##       |       |   |  +--| (88)
+##       |       |   |  |  +--AY424655.1
+##       |       |   +--| (100)
+##       |       |      +----AY424657.1
+##       +-------| (100)
+##               |                                      +------AB292070.1
+##               |           +--------------------------| (100)
+##               |           |                          |  +--AM748311.1
+##               |           |                          +--| (99)
+##               |           |                             +--AY424666.1
+##               |        +--| (61)
+##               |        |  |                 +------------AB491590.1
+##               |        |  +-----------------| (100)
+##               |        |                    +------AB539128.1
+##               +--------| (100)
+##                        +---------------------------------------EU371738.1
+## 
+## Tree in newick format:
+## 
+## (AY429653.1:0.0000020347,AY429652.1:0.0000020183,((AY424651.1:0.0057666723,AY424650.1:0.0033008758)51:0.0000022109,(AY424649.1:0.0041258366,(((AY424663.1:0.0042878865,AY424658.1:0.0114141572)98:0.0056871490,((KY608941.1:0.0057505854,AY424655.1:0.0011198466)88:0.0022431632,AY424657.1:0.0122859255)100:0.0090119904)99:0.0106478575,(((AB292070.1:0.0183717397,(AM748311.1:0.0082188583,AY424666.1:0.0078808193)99:0.0069392705)100:0.0671567463,(AB491590.1:0.0335969035,AB539128.1:0.0191786128)100:0.0456235597)61:0.0060184463,EU371738.1:0.0983483873)100:0.0226822005)100:0.0197454852)61:0.0009099529)95:0.0038963145);
+## 
+## CONSENSUS TREE
+## --------------
+## 
+## Consensus tree is constructed from 1000bootstrap trees
+## Log-likelihood of consensus tree: -4254.228840
+## Robinson-Foulds distance between ML tree and consensus tree: 0
+## 
+## Branches with support &gt;0.000000% are kept (extended consensus)
+## Branch lengths are optimized by maximum likelihood on original alignment
+## Numbers in parentheses are bootstrap supports (%)
+## 
+## +--AY429653.1
+## |
+## +--AY429652.1
+## |
+## |     +--AY424651.1
+## |  +--| (51)
+## |  |  +--AY424650.1
+## +--| (95)
+##    |  +--AY424649.1
+##    +--| (61)
+##       |              +--AY424663.1
+##       |           +--| (98)
+##       |           |  +---AY424658.1
+##       |       +---| (99)
+##       |       |   |     +--KY608941.1
+##       |       |   |  +--| (88)
+##       |       |   |  |  +--AY424655.1
+##       |       |   +--| (100)
+##       |       |      +----AY424657.1
+##       +-------| (100)
+##               |                                      +------AB292070.1
+##               |           +--------------------------| (100)
+##               |           |                          |  +--AM748311.1
+##               |           |                          +--| (99)
+##               |           |                             +--AY424666.1
+##               |        +--| (61)
+##               |        |  |                 +------------AB491590.1
+##               |        |  +-----------------| (100)
+##               |        |                    +------AB539128.1
+##               +--------| (100)
+##                        +---------------------------------------EU371738.1
+## 
+## 
+## Consensus tree in newick format: 
+## 
+## (AY429653.1:0.0000024275,AY429652.1:0.0000024275,((AY424651.1:0.0057664078,AY424650.1:0.0033003609)51:0.0000020449,(AY424649.1:0.0041257759,(((AY424663.1:0.0042876546,AY424658.1:0.0114138107)98:0.0056870553,((KY608941.1:0.0057506590,AY424655.1:0.0011198029)88:0.0022431668,AY424657.1:0.0122854241)100:0.0090120773)99:0.0106469707,(((AB292070.1:0.0183713451,(AM748311.1:0.0082187511,AY424666.1:0.0078804525)99:0.0069392278)100:0.0671579236,(AB491590.1:0.0335970948,AB539128.1:0.0191788185)100:0.0456230701)61:0.0060199522,EU371738.1:0.0983481530)100:0.0226814760)100:0.0197448940)61:0.0009099416)95:0.0038965027);
+## 
+## TIME STAMP
+## ----------
+## 
+## Date and time: Fri Apr 26 10:59:35 2019
+## Total CPU time used: 3.71875 seconds (0h:0m:3s)
+## Total wall-clock time used: 4.144787188 seconds (0h:0m:4s)
+## </code></pre>
+<p>IQ-Tree fits models using maximum likelihood (ML) then selects the ‘best’ model using Bayesian Information Criteria (BIC). Likelihood estimates the probability of the sequences given a model of their evolution on a tree, <span class="math inline">\(P(Y|\theta)\)</span>, where<span class="math inline">\(Y\)</span> are the observed sequences and <span class="math inline">\(\theta\)</span> are phylogenetic trees. Unfortunately, ML can’t tell us <span class="math inline">\(P(\theta|Y)\)</span>, but we can at least estimate which model out of all the ML models fitted explains the observed data the best. Information criteria can be thought of as a distance to a (usually unknowable) ‘true’ model of the data/sequence-generating process, such that the model with the smallest BIC is the model that ‘best’ explains the observed data (according to BIC) and is, under the model assumptions (including the sampling model), closest to the ‘true’ model.</p>
+<p>ML models are computationally expensive, so traditional bootstrap replication can take an unreasonable long time to compute. UFBoot speeds up this process by applying stopping rules and judicious selection of candidate trees. A drawback is that support for a clade requires a more stringent cut-off (95% or higher, rather than the traditional 80% often advocated for non-parametric bootstrap resampling).</p>
+<p>The tree presented above has several clades with weak support, suggesting large gaps in the evolutionary model.</p>
+</div>
 <div id="phylogenetic-network" class="section level2">
 <h2>Phylogenetic Network</h2>
 <p>HKY distances were used to estimate a phylogenetic network in SplitsTree4 <span class="citation">(Huson and Bryant 2005)</span>.</p>
@@ -1094,6 +2257,15 @@ print.fasta(aligned)</code></pre>
 <p class="caption">Phylogenetic network using HKY distances, with bootstrap estimates</p>
 </div>
 </div>
+</div>
+<div id="discussion" class="section level1">
+<h1>Discussion</h1>
+<p>There was broad agreement between the trees estimated using neighbour joining, maximum parsimony, and maximum likelihood methods. Bootstrap estimates provided support for the most closely related species, but provided much less support where more evolutionary distant species were placed in clades. For example, there was good support for {<code>AB539128.1</code>, <code>AB491590.1</code>} (100% of bootstrap replications) and {<code>AY424666.1</code>, <code>AM748311.1</code>, <code>AB292070.1</code>} (98-100% of boostrap replications), but much less support for placing these clades together on a branch (61-64% of bootstrap replications).</p>
+<p>It was difficult to compare the phylogenetic network with the trees.</p>
+</div>
+<div id="data-and-source-code" class="section level1">
+<h1>Data and source code</h1>
+<p>Data including model summary output and code used to produce this document can be accessed at <a href="https://github.com/ABindoff/kma712_ass1">github.com/ABindoff/kma712_ass1</a></p>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1>References</h1>
@@ -1104,6 +2276,9 @@ print.fasta(aligned)</code></pre>
 <div id="ref-altschul1997gapped">
 <p>Altschul, Stephen F, Thomas L Madden, Alejandro A Schäffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J Lipman. 1997. “Gapped Blast and Psi-Blast: A New Generation of Protein Database Search Programs.” <em>Nucleic Acids Research</em> 25 (17). Oxford University Press: 3389–3402.</p>
 </div>
+<div id="ref-edgar2004muscle">
+<p>Edgar, Robert C. 2004. “MUSCLE: Multiple Sequence Alignment with High Accuracy and High Throughput.” <em>Nucleic Acids Research</em> 32 (5). Oxford University Press: 1792–7.</p>
+</div>
 <div id="ref-felsenstein2004phylip">
 <p>Felsenstein, Joseph. 2004. “PHYLIP (Phylogeny Inference Package) Version 3.6. Distributed by the Author.” <em>Http://Www. Evolution. Gs. Washington. Edu/Phylip. Html</em>. Department of Genome Sciences, University of Washington.</p>
 </div>
@@ -1113,8 +2288,20 @@ print.fasta(aligned)</code></pre>
 <div id="ref-gouy2009seaview">
 <p>Gouy, Manolo, Stéphane Guindon, and Olivier Gascuel. 2009. “SeaView Version 4: A Multiplatform Graphical User Interface for Sequence Alignment and Phylogenetic Tree Building.” <em>Molecular Biology and Evolution</em> 27 (2). Oxford University Press: 221–24.</p>
 </div>
+<div id="ref-hoang2017ufboot2">
+<p>Hoang, Diep Thi, Olga Chernomor, Arndt Von Haeseler, Bui Quang Minh, and Le Sy Vinh. 2017. “UFBoot2: Improving the Ultrafast Bootstrap Approximation.” <em>Molecular Biology and Evolution</em> 35 (2). Oxford University Press: 518–22.</p>
+</div>
 <div id="ref-huson2005application">
 <p>Huson, Daniel H, and David Bryant. 2005. “Application of Phylogenetic Networks in Evolutionary Studies.” <em>Molecular Biology and Evolution</em> 23 (2). Oxford University Press: 254–67.</p>
+</div>
+<div id="ref-kalyaanamoorthy2017modelfinder">
+<p>Kalyaanamoorthy, Subha, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler, and Lars S Jermiin. 2017. “ModelFinder: Fast Model Selection for Accurate Phylogenetic Estimates.” <em>Nature Methods</em> 14 (6). Nature Publishing Group: 587.</p>
+</div>
+<div id="ref-nguyen2014iq">
+<p>Nguyen, Lam-Tung, Heiko A Schmidt, Arndt von Haeseler, and Bui Quang Minh. 2014. “IQ-Tree: A Fast and Effective Stochastic Algorithm for Estimating Maximum-Likelihood Phylogenies.” <em>Molecular Biology and Evolution</em> 32 (1). Oxford University Press: 268–74.</p>
+</div>
+<div id="ref-sievers2014clustal">
+<p>Sievers, Fabian, and Desmond G Higgins. 2014. “Clustal Omega.” <em>Current Protocols in Bioinformatics</em> 48 (1). Wiley Online Library: 3–13.</p>
 </div>
 </div>
 </div>
