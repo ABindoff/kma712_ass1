@@ -96,13 +96,50 @@ NCBI BLAST treats the database of sequences as a single very long sequence of le
 
 ## Alignment
 
-16 sequences were chosen from different species and downloaded. They were then aligned using muscle [@muscle] in Seaview [@seaview].
+16 sequences were chosen from different species and downloaded. They were then aligned using muscle [@muscle] in Seaview [@gouy2009seaview].
 
 ```{r}
 aligned <- bio3d::read.fasta("fasta_15.fst")
 print.fasta(aligned)
 
 ```
+
+Comment on difference between this alignment and BLAST alignment to query sequence  
+
+## Neighbour Joining
+
+SplitsTree4 [@huson2005application] was used to build neighbour-joining trees, using 1000 bootstrap replicates to estimate robustness of the tree.  
+
+![Neighbour joining tree with bootstrap estimates](boot_strapped_nj_tree.png)
+
+## Maximum Parsimony Tree
+
+PHYLIP v3.696 [@felsenstein2004phylip] was used to compute parsimony trees in SeaView [@gouy2009seaview].  
+
+![Parsimony tree with bootstrap estimates](fasta_15-Dnapars.png)
+
+## Maximum Likelihood Tree
+
+```{r, eval = FALSE}
+# I didn't have room for Linux VM on home computer where I was doing this
+cmd <- "iqtree-1.6.10-Windows\\bin\\iqtree -s fasta_15.nxs -bb 1000 -nt 2"
+system(cmd)
+
+```
+
+```{r}
+cat(read_file("fasta_15.nxs.log"))
+```
+```{r}
+cat(read_file("fasta_15.nxs.contree"))
+
+```
+
+## Phylogenetic Network
+
+HKY distances were used to estimate a phylogenetic network in SplitsTree4 [@huson2005application].  
+
+![Phylogenetic network using HKY distances, with bootstrap estimates](hky_phylo_net.png)
 
 # References
 
